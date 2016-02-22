@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact - Moderna</title>
+    <meta name="description" content="Moderna Responsive HTML5 Template">
+    <meta name="author" content="pixel-industry">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" />
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="css/960_12_col.css" media="screen" />
+    <link rel="stylesheet" href="css/reset.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" title="activestyle" href="css/default-blue.css" media="screen" /> <!--default blue color style-->  
+
+    <!--[if IE 7]>
+<link rel="stylesheet" href="css/ie7.css" media="screen" />
+<![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="css/ie8.css" media="screen" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" href="css/ie9.css" media="screen" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- google web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- header wrapper start -->
+    <section id="header-wrapper">
+
+        <!-- header start -->
+        <header id="header" class="clearfix">
+            <!-- logo start -->
+        
+
+            <!-- main navigation container start -->
+            <section id="nav-container">
+
+                <!-- main navigation start  -->
+                  <nav id="nav">
+                    <ul>
+                        <li class="active"><a href="mainhome.html">Home</a></li>
+           
+                                <li> <a href="about.html">About us</a></li>
+                      
+                                <li> <a href="codecall/index.php">Login</a></li>
+              
+                                <li> <a href="admin/index.php">Admin</a></li>
+</ul>
+</nav>
+
+                <!-- responsive navigation start -->
+            
+
+                <!-- search start -->
+             
+
+            </section><!-- main navigation container end -->
+
+        </header><!-- header end -->
+
+        <!-- page-title start -->
+        <section id="page-title">
+            <h1>Get In Touch</h1>
+        </section><!-- page-title end -->
+
+    </section><!-- header wrapper end -->
+
+    <!-- content wrapper start -->
+    <section id="content-wrapper">
+
+        <!-- container_12 start -->
+        <section class="container_12">
+
+            <!-- section title start -->
+            <section class="grid_12 section-title">
+                <h5>Contact</h5>
+            </section><!-- section title end -->
+
+            <section class="grid_6 contact-form">
+                <form>
+                    <label>Name:</label>
+                    <input class="name" id="contact-name" type="text"/>
+
+                    <label>Email:</label>
+                    <input class="email" type="email" id="contact-email"/>
+
+                    <label>Message:</label>
+                    <textarea class="contact-message" id="contact-message" rows="5"></textarea>
+                    <input class="submit btn-medium style-color" type="submit" value="SEND"/>
+                </form>
+                <div id="contact-response"></div>
+            </section><!-- contact form end -->
+
+            <section class="grid_6">
+                <article class="grid_6 alpha">
+                    <h6>how to contact us</h6>
+
+                    <p></p>
+                </article>
+
+                <article class="grid_3 alpha">
+                    <h6 class="title">Our School</h6>
+                    <p>Heroes Boulevard, Buag Bambang
+                        <br />
+                       Bambang, Nueva Vizcaya
+                        <br />
+                        3709, Philippines
+                    </p>
+                </article>
+
+                <article class="grid_3 omega">
+                    <h6>Contact Info</h6>
+                    <p>Phone: (02)326-1234
+                        <br />
+                        Fax: +(0) 000-1224-5679
+                        <br />
+                        Email: <a href="#">bnhs@info.com</a>
+                    </p>
+                </article>
+
+            </section>
+        </section><!-- container_12 end -->
+
+    </section><!-- content-wrapper end -->
+
+    <!-- footer start -->
+    <footer id="footer" class="clearfix">
+        
+
+        <!-- copyright start -->
+        <section class="container_12 clearfix">
+            <section class="copyright">
+                <p>Copyright Moderna 2012. All rights reserved. Theme by <span class="find-out-more">Pixel-industry.</span></p>
+                <a class="to-top-link"><img src="img/to-top.png" class="to-top" alt="back to top"/></a>
+            </section>
+        </section><!-- copyright end -->
+    </footer><!-- footer end -->
+
+    <!-- js files -->
+    <script  src="js/jquery-1.7.2.js"></script> <!-- jQuery 1.7.2 -->
+    <script  src="js/jquery.tweetscroll.js"></script> <!-- jQuery tweetscroll plugin -->
+    <script  src="js/socialstream.jquery.js"></script> <!-- Social Networks Feeds -->
+    <script  src="js/include.js"></script> <!-- jQuery custom options -->
+    <script  src="js/jquery.placeholder.min.js"></script><!-- jQuery placeholder fix for old browsers -->
+    <!-- end js files -->
+
+    <script>
+        /* <![CDATA[ */
+        $(function() {
+            $('.contact-form .submit').on('click', function(event) {
+                event.preventDefault();
+                var name = $('#contact-name').val();
+                var email = $('#contact-email').val();
+                var message = $('#contact-message').val();
+
+                $.ajax({
+                    type: 'POST',
+                    url: "contact.php",
+                    data: ({name: name, email: email, message: message})
+                }).done(function(data) {
+                    console.log(data);
+                    $('#contact-response').html(data);
+                });
+            });
+        });
+        /* ]]> */
+    </script>
+
+</body>
+</html>

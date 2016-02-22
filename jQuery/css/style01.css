@@ -1,0 +1,109 @@
+/**
+*	@author 	Ing. Israel Barragan C.  Email: ibarragan at behstant dot com
+*	@since 		07-Nov-2013
+*	##########################################################################################
+*	Comments:
+*	This file contains specific styles for the tutorials
+*	The records are shown in a HTML table.
+*
+*	Requires:
+*
+* 	LICENCE:
+*	You can use this code to any of your projects as long as you mention where you
+* 	downloaded it and the author which is me :) Happy Code.
+*
+* 	LICENCIA:
+*	Puedes usar este código para tus proyectos, pero siempre tomando en cuenta que
+* 	debes de poner de donde lo descargaste y el autor que soy yo :) Feliz Codificación.
+*	##########################################################################################
+*	@version
+*	##########################################################################################
+*	1.0	|	19-Jun-2013	|	Creation of new file to search a record.
+*	2.0	|	07-Nov-2013	|	Modified styles to make a smooth sync with Bootstrap.
+*	##########################################################################################
+*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #b0d4e3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b0d4e3 0%, #88bacf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0d4e3), color-stop(100%,#88bacf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b0d4e3 0%,#88bacf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=0 ); /* IE6-9 */
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	background: #b0d4e3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b0d4e3 0%, #88bacf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0d4e3), color-stop(100%,#88bacf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b0d4e3 0%,#88bacf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b0d4e3 0%,#88bacf 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+table {
+	border: none;
+}
+
+table thead th {
+	background-color: #4297BB;
+	text-align: center;
+}
+
+table tbody td {
+	background-color: #EFEFEF;
+	color: #000000;
+	text-align: center;
+}
+
+th, td, tr {
+	padding: 8px;
+	color: white;
+}
+
+fieldset {
+	border: 1px solid #1F7EAD;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 2px #808080;
+    box-shadow: 0px 0px 10px 2px #808080;
+    background-color: #EFEFEF;
+    min-height: 700px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.noMargin {
+	margin: 0 !important;
+}
+
+.blueFont {
+	color: #4297BB;
+}
+
+.orangeFont {
+	color: #FF8000;
+}
+
+.center {
+	display: block !important;
+	margin: 0 auto !important;
+}
