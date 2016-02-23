@@ -48,7 +48,12 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-        
+            <section id="logo">
+                <a href="index.html">
+                    logo
+                </a>
+            </section><!-- logo end -->
+          
             <!-- main navigation container start -->
             <section id="nav-container">
 
@@ -59,7 +64,7 @@
                             
                                 <li> <a href="viewing.php">View Profile</a></li>
                        
-                                <li> <a href="searcheditstudent.php">Enroll & Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
                     
                                 <li> <a href="mainhome.html">Logout</a></li>
                      

@@ -36,24 +36,30 @@ require_once 'viewing_fucntion.php';
 </head><!--/head-->
 <body>
 
+<!-- header start -->
+        <header id="header" class="clearfix"> 
+ 
      <!-- header wrapper start -->
     <section id="header-wrapper">
-
-        <!-- header start -->
-        <header id="header" class="clearfix">
-            <!-- logo start -->
-            
-            <!-- main navigation container start -->
+        
+			<!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+			
+			<!-- main navigation container start -->
             <section id="nav-container">
-
+			
                 <!-- main navigation start  -->
                 <nav id="nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
                             
-                                <li> <a href="viewprofile.php">View Profile</a></li>
+                                <li> <a href="viewing.php">View Profile</a></li>
                        
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
                     
                                 <li> <a href="mainhome.html">Logout</a></li>
                    </ul>
@@ -88,12 +94,12 @@ require_once 'viewing_fucntion.php';
 		 <div class="form-group">
             <label class="col-lg-3 control-label">Password:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="password" >
+              <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" required>
             </div>
 				 <div class="form-group">
             <label class="col-lg-3 control-label">Confirem Password:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="conpassword">
+              <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" required>
             </div>
 		
 		  <div class="form-group">

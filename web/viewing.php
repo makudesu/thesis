@@ -31,22 +31,30 @@ require_once 'viewing_fucntion.php';
 </head><!--/head-->
 <body>
 
+<!-- header start -->
+        <header id="header" class="clearfix"> 
+ 
      <!-- header wrapper start -->
     <section id="header-wrapper">
-        <!-- header start -->
-        <header id="header" class="clearfix">
-            <!-- logo start -->   
-            <!-- main navigation container start -->
+        
+			<!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+			
+			<!-- main navigation container start -->
             <section id="nav-container">
-
+			
                 <!-- main navigation start  -->
                 <nav id="nav">
                     <ul>
                       <li class="active"><a href="index.html">Home</a></li>
                             
-                                <li> <a href="viewprofile.php">View Profile</a></li>
+                                <li> <a href="viewing.php">View Profile</a></li>
                        
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
                     
                                 <li> <a href="mainhome.html">Logout</a></li>
 						</ul>
@@ -77,17 +85,14 @@ require_once 'viewing_fucntion.php';
             <div class="col-lg-8">
               <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" disabled>
             </div>
+			
 		
-		
-	
-		
-		
-		  <div class="form-group">
+		<div class="form-group">
             <label class="col-lg-3 control-label">Year/Grade Level:</label>
             <div class="col-lg-8">
               <div class="ui-select">
-                <select id="level" class="form-control" name="level" disabled>
-				<option></option>
+                <select id="level" class="form-control" name="level" value="<?php echo $level?>" disabled>
+				<option><?php echo $level?></option>
 				  <option>Grade 7</option>
                   <option>Grade 8</option>
 				  <option>Grade 9</option>
@@ -99,12 +104,12 @@ require_once 'viewing_fucntion.php';
             </div>
           </div>
 		  
-		   <div class="form-group">
+		  <div class="form-group">
             <label class="col-lg-3 control-label">Enrollment Status:</label>
             <div class="col-lg-8">
-              <div class="ui-select">
-                <select id="status" class="form-control" name="status" disabled>
-				<option></option>
+				<div class="ui-select">
+				<select id="status" class="form-control" name="status" value="<?php echo $status?>" disabled>
+				<option><?php echo $status?></option>
                   <option>New Student</option>
                   <option>Old Student</option>
 				  <option>Transferee</option>
@@ -113,12 +118,23 @@ require_once 'viewing_fucntion.php';
             </div>
           </div>
 		  
-		   <div class="form-group">
+		  <div class="form-group">
             <label class="col-lg-3 control-label">School Year:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="year" value="<?php echo $year ?>" disabled>
+              <div class="ui-select">
+                <select id="year" class="form-control" name="year" value="<?php echo $year?>" disabled>
+				<option><?php echo $year?></option>
+				  <option>2010-2011</option>
+				  <option>2011-2012</option>
+                  <option>2012-2013</option>
+				  <option>2013-2014</option>
+                  <option>2014-2015</option>
+				  <option>2015-2016</option>                
+                </select>
+              </div>
             </div>
-
+          </div>
+		
 		  <div class="form-group">
             <label class="col-lg-3 control-label">Student ID:</label>
             <div class="col-lg-8">
@@ -217,28 +233,28 @@ require_once 'viewing_fucntion.php';
           <div class="form-group">
             <label class="col-md-3 control-label">Incase of Emergency:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" >
+              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" disabled > 
             </div>
           </div>
 		
 		<div class="form-group">
             <label class="col-md-3 control-label">Relationship:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>">
+              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>" disabled>
             </div>
           </div>
 		  
 		  <div class="form-group">
             <label class="col-md-3 control-label">Address:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>">
+              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>"disabled>
             </div>
           </div>
               
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>">
+              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>" disabled>
             </div>
           </div>
 		  
