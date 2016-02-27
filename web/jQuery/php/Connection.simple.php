@@ -14,10 +14,10 @@
 
 function dbConnect (){
  	$conn =	null;
- 	$host = 'localhost';
+ 	$host = 'db4free.net';
  	$db = 	'codecalltut';
- 	$user = 'root';
- 	$pwd = 	'';
+ 	$user = 'bnhs';
+ 	$pwd = 	'123456';
 	try {
 	   	$conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
 		//echo 'Connected succesfully.<br>';
