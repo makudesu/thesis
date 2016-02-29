@@ -1,33 +1,8 @@
 
-<?php
-require_once 'viewing_fucntion.php';
-		$sql = "UPDATE tblprereg SET YearLevel='Grade 7', Status='Old Student'  WHERE username ='" . $uname . "';";
-		// we have to tell the PDO that we are going to send values to the query
-		$stmt = $conn->prepare($sql);
-		// Now we execute the query passing an array toe execute();
-		$results = $stmt->execute();
-foreach ($rows as $row) {
-		$yearlevel=$row['YearLevel'];
-		if ($yearlevel == 'Grade 7') {
-?>	
-
-
-
-<?php		
-		}
-		else {
-		print 'not grade 12';
-		}
-	
-
-}
-?>
-
-
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Home - Moderna</title>
+    <title>Home - BNHS</title>
     <meta name="description" content="Moderna Responsive HTML5 Template">
     <meta name="author" content="pixel-industry">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -74,20 +49,36 @@ foreach ($rows as $row) {
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-         
+			
+ <!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+		
+            <!-- main navigation container start -->
+          
+            <!-- main navigation container start -->
+            <section id="nav-container">
 
                 <!-- main navigation start  -->
-           <nav id="nav">
+                  <nav id="nav">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                       
+                          
+                                <li class="active"><a href="index.html">Home</a></li>
              
-                                <li> <a href="viewprofile.php">View Profile</a></li>
+                                <li> <a href="viewing.php">View Profile</a></li>
                       
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
+                             
        
                                 <li> <a href="mainhome.html">Logout</a></li>
-            </ul>
-			</nav>
+                        
+                     
+</ul>
+</nav>
+			
             </section><!-- main navigation container end -->
 
         </header><!-- header end -->
@@ -98,21 +89,21 @@ foreach ($rows as $row) {
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong><u>Choose Grade Level</u></strong></h2></center>
+<center><h2><strong>Choose Grade Level</strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
-<center>
-<h2><strong><a href="grade7sub.php">Grade 7</a></strong></h2>
 
-<h2><strong><a href="grade8sub.php">Grade 8</a></strong></h2>
+<center>&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade7sub.php">Grade 7</a></strong></h2></button>
 
-<h2><strong><a href="grade9sub.php">Grade 9 </a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade8sub.php">Grade 8</a></strong></h2></button>
 
-<h2><strong><a href="grade10sub.php">Grade 10</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade9sub.php">Grade 9 </a></strong></h2></button>
 
-<h2><strong><a href="grade11sub.php">Grade 11</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade10sub.php">Grade 10</a></strong></h2></button>
 
-<h2><strong><a href="grade12sub.php">Grade 12</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade11sub.php">Grade 11</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade12sub.php">Grade 12</a></strong></h2></button>
 </center>
 </form>
 		
@@ -192,6 +183,30 @@ foreach ($rows as $row) {
 
         });
         /* ]]> */
+		
+		
+<?php
+require_once 'viewing_fucntion.php';
+		$sql = "UPDATE tblprereg SET YearLevel='level', Status='', SchoolYear='' WHERE username ='" . $uname . "';";
+		// we have to tell the PDO that we are going to send values to the query
+		$stmt = $conn-> $prepare($sql);
+		// Now we execute the query passing an array toe execute();
+		$results = $stmt-> &execute();
+foreach ($rows as $row) {
+		$yearlevel=$row['YearLevel'];
+		if ($yearlevel == 'Grade 7') {
+
+
+
+
+<?php		
+	
+		}
+	
+
+}
+?>
+
     </script>
 </body>
 </html>

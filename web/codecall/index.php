@@ -17,7 +17,7 @@
     
         <header id="head" >
         	<h1><a href="localhost/stretched/admin/index.html">BACK</a></h1>
-        	<p><a href="register.php"><span id="register">Register</span></a></p>
+        	
         </header>
         
         <div id="main-wrapper">
@@ -35,7 +35,8 @@
                     	</li>
                     	<li class="buttons">
                         	<input type="submit" name="login" value="Log me in" />
-                            <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+						    <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+                            
                     	</li>
                     
                 	</ul>

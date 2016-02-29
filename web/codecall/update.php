@@ -47,10 +47,7 @@
               <div class="ui-select">
                 <select id="level" class="form-control" maxlength="100" name="level" required>
 				<option></option>
-                  <option>First Year</option>
-                  <option>Second Year</option>
-				  <option>Third Year</option>
-                  <option>Fourth Year</option>
+                 
 				  <option>Grade 7</option>
                   <option>Grade 8</option>
 				  <option>Grade 9</option>

@@ -48,6 +48,15 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
+			
+ <!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                    logo
+                </a>
+            </section><!-- logo end -->
+		
+            <!-- main navigation container start -->
           
             <!-- main navigation container start -->
             <section id="nav-container">
@@ -59,14 +68,7 @@
                           
                                 <li> <a href="viewprofile.php">View Student Profile</a></li>
           
-						
-                                <li> <a href="searcheditstudent.php">Edit Student Profile</a></li>
                       
-					
-                                <li> <a href="addgrade.php">Add Student Grade</a></li>
-                       
-					
-                                <li> <a href="/stretched/admin/jQuery/index.php">View Student Grade</a></li>
                     
 					
                                 <li> <a href="assessment.php">Print Assessment</a></li>
@@ -89,15 +91,27 @@
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<center><h3><strong><u>View Profile</u></strong></h3></center>
+<center><h3><strong>View Profile</strong></h3></center>
 <form name="myform" action="viewing.php" method="get" onsubmit="return validateForm()">
 <br><br>
-<center>Enter ID No.:
-			<input type="text" name="search" class="ed" id="brnu" />
+<center>
+			<input type="text" value= "Student Name" name="search" class="ed" id="brnu" />
 <input type="submit" value="Submit" />  </center>
 </form>
 
+<iframe width="100%" scrolling="no" name="iframe1" src="table.php"></iframe>
     </section><!-- content-wrapper end -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

@@ -43,12 +43,7 @@
 		$religion=$row['Religion'];
 		$email=$row['Email'];
 		$presentadd=$row['Address'];
-		$guardian=$row['Guardian'];
-		$relationship=$row['Relationship'];
-		$emergency=$row['Emergency'];
-		$erelationship=$row['ERelationship'];
-		$eaddress=$row['EAddress'];
-		$emergencyaddress=$row['EAddress'];
+		
 		$cp=$row['CPnumber'];
 		
 		}
@@ -157,32 +152,11 @@
               <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" required>
             </div>
 				 <div class="form-group">
-            <label class="col-lg-3 control-label">Confirem Password:</label>
+            <label class="col-lg-3 control-label">Confirm Password:</label>
             <div class="col-lg-8">
               <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" required>
             </div>
 		
-		
-	
-		
-		
-		  <div class="form-group">
-            <label class="col-lg-3 control-label">Year/Grade Level:</label>
-            <div class="col-lg-8">
-              <div class="ui-select">
-                <select id="level" class="form-control" name="level" required>
-				<option></option>
-				  <option>Grade 7</option>
-                  <option>Grade 8</option>
-				  <option>Grade 9</option>
-                  <option>Grade 10</option>
-				  <option>Grade 11</option>
-                  <option>Grade 12</option>
-                </select>
-              </div>
-            </div>
-          </div>
-		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Enrollment Status:</label>
             <div class="col-lg-8">
@@ -200,7 +174,7 @@
 		   <div class="form-group">
             <label class="col-lg-3 control-label">School Year:</label>
             <div class="col-lg-8">
-              <div class="ui-select">
+			<div class="ui-select">
                 <select id="status" class="form-control" name="status" required>
 				  <option>2010-2011</option>
                   <option>2011-2012</option>
@@ -294,49 +268,12 @@
             </div>
           </div>
 		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" value="<?php echo $guardian ?>" required>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" value="<?php echo $relationship ?>" required>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" >
-            </div>
-          </div>
-		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>">
-            </div>
-          </div>
-		  
-		  <div class="form-group">
-            <label class="col-md-3 control-label">Address:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>">
-            </div>
-          </div>
-              
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>">
-            </div>
+              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>"> <br>
+			</div>
           </div>
-		  
-		 
 		  
 		     
 	<div class="form-group">

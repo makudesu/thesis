@@ -8,7 +8,7 @@ require_once 'viewing_fucntion.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Portfolio | Corlate</title>
+    <title>BNHS</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -19,13 +19,13 @@ require_once 'viewing_fucntion.php';
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-	  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />  
+    <link rel="shortcut icon" href="images/jpg/favicon.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/jpg/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/jpg/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/jpg/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/jpg/apple-touch-icon-57-precomposed.png">
+	  <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" />  
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/960_12_col.css" media="screen" />
@@ -59,7 +59,7 @@ require_once 'viewing_fucntion.php';
                             
                                 <li> <a href="viewing.php">View Profile</a></li>
                        
-                                <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Enroll</a></li>
                     
                                 <li> <a href="mainhome.html">Logout</a></li>
                    </ul>
@@ -70,7 +70,7 @@ require_once 'viewing_fucntion.php';
         </header><!-- header end -->
     </section><!-- header wrapper end -->
 
-<form action="subjects.html" method="post" onsubmit="return validateForm()">
+<form action="subjects.php" method="post" onsubmit="return validateForm()">
 
  <div class="container">
     
@@ -97,28 +97,11 @@ require_once 'viewing_fucntion.php';
               <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" required>
             </div>
 				 <div class="form-group">
-            <label class="col-lg-3 control-label">Confirem Password:</label>
+            <label class="col-lg-3 control-label">Confirm Password:</label>
             <div class="col-lg-8">
               <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" required>
             </div>
 		
-		  <div class="form-group">
-            <label class="col-lg-3 control-label">Year/Grade Level:</label>
-            <div class="col-lg-8">
-              <div class="ui-select">
-                <select id="level" class="form-control" name="level" required>
-				<option></option>
-				  <option>Grade 7</option>
-                  <option>Grade 8</option>
-				  <option>Grade 9</option>
-                  <option>Grade 10</option>
-				  <option>Grade 11</option>
-                  <option>Grade 12</option>
-                </select>
-              </div>
-            </div>
-          </div>
-		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Enrollment Status:</label>
             <div class="col-lg-8">
@@ -127,7 +110,6 @@ require_once 'viewing_fucntion.php';
 				<option></option>
                   <option>New Student</option>
                   <option>Old Student</option>
-				  <option>Transferee</option>
                 </select>
               </div>
             </div>
@@ -230,57 +212,32 @@ require_once 'viewing_fucntion.php';
             </div>
           </div>
 		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" value="<?php echo $guardian ?>" required>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" value="<?php echo $relationship ?>" required>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" >
-            </div>
-          </div>
-		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>">
-            </div>
-          </div>
-		  
-		  <div class="form-group">
-            <label class="col-md-3 control-label">Address:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>">
-            </div>
-          </div>
-              
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>">
-            </div>
+              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>"> <br>
+			</div>
           </div>
+		  
+
 	
-			  <input type="submit" name="Submit" value="ENROLL" id="button1" />
+			 <center> <input type="submit" name="Submit" value="NEXT" id="button1" /> </center>
 		
-        </form>
-
-	<form action="jQuery/index.php" method="post" >
-	<center>View Grade :
-<input type="submit" value="View Grade" />  </center>
-</form>
-
+    <br><br><br><br>
+	</form>
+	
+	
+	<?php
+		//$SchoolYear = 'hello';
+		//$sql = "UPDATE tblprereg SET SchoolYear='". $SchoolYear ."' WHERE username ='" . $uname . "';";
+		// we have to tell the PDO that we are going to send values to the query
+		//$stmt = $conn->prepare($sql);
+		// Now we execute the query passing an array toe execute();
+		//$results = $stmt->execute();
+		//foreach ($rows as $row) {
+		//$yearlevel=$row['YearLevel'];		
+		//}
+?>
 
     
     <script src="js/jquery.js"></script>
