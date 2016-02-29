@@ -16,7 +16,7 @@
     <body>
     
         <header id="head" >
-        	<h1><a href="localhost/stretched/admin/index.html">BACK</a></h1>
+        	<h1><a href="localhost/stretched/admin/index.html"></a></h1>
         	
         </header>
         

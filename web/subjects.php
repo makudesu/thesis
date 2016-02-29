@@ -72,7 +72,7 @@
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong><u>Choose Grade Level</u></strong></h2></center>
+<center><h2><strong>Choose Grade Level</strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 <center>
