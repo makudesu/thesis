@@ -57,7 +57,7 @@
              
                                 <li> <a href="viewprofile.php">View Profile</a></li>
                       
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Edit Profile</a></li>
        
                                 <li> <a href="mainhome.html">Logout</a></li>
             </ul>

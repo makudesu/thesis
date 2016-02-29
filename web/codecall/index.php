@@ -56,7 +56,7 @@
 	if( $usr->userLogin() ) {
 	$_SESSION['uname'] = $_POST['username'];
 		//echo "Welcome";	
-		header("location:../index.html");	
+		header("location:/thesis/web/index.html");	
 	} else {
 		echo "Incorrect Username/Password";	
 	}
