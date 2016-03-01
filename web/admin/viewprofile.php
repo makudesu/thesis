@@ -52,7 +52,7 @@
  <!-- logo start -->
             <section id="logo">
                 <a href="index.html">
-                    logo
+                    
                 </a>
             </section><!-- logo end -->
 		
@@ -91,13 +91,7 @@
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<center><h3><strong>View Profile</strong></h3></center>
-<form name="myform" action="viewing.php" method="get" onsubmit="return validateForm()">
-<br><br>
-<center>
-			<input type="text" value= "Student Name" name="search" class="ed" id="brnu" />
-<input type="submit" value="Submit" />  </center>
-</form>
+
 
 <iframe width="100%" scrolling="no" name="iframe1" src="table.php"></iframe>
     </section><!-- content-wrapper end -->

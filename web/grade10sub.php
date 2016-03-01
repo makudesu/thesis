@@ -158,43 +158,43 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
 		<br><center><h2><strong>Assessment of Fees</strong></h2></center><br>
 			
 	<table style="width:80%">
-	 <th><tr><b>Description</b></th></tr>
+<th><tr><b>Description</b></th></tr>
      &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
     <th><tr><b><u>Amount</u></b></th></tr>
 	
 	<tr>
     <td>Admission</td>
     <td></td> 
-    <td>P300.00</td>
+    <td style="text-align:right">P300.00</td>
   </tr>
   <tr>
     <td>Exam and Stationary</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Games and Sports</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Library</td>
     <td></td> 
-    <td>P50.00</td>
+    <td style="text-align:right">P50.00</td>
   </tr>
   <tr>
     <td>Journals</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Computer Fees</td>
     <td></td> 
-    <td>P1000.00</td>
+    <td style="text-align:right">P1000.00</td>
   </tr>
 <tr>
     <td> </td>
@@ -209,9 +209,10 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
  <tr>
     <td><h4><br><i>Total Tuition Fee</i></h4></td>
     <td></td> 
-    <td><h4><br><i>P1650.00</i></h4></td>
+    <td style="text-align:right"><h4><br><i>P1650.00</i></h4></td>
   </tr>
  
+
 </table>
 
 

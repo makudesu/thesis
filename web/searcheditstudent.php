@@ -82,7 +82,7 @@
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<center><h3><strong>Enroll & Edit Profile</strong></h3></center>
+<center><h3><strong>Enroll & Edit Profil</strong></h3></center>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 <br><br>
 <center>Enter ID No.:

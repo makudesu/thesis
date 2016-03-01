@@ -48,10 +48,17 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-         
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+          
+            <!-- main navigation container start -->
+            <section id="nav-container">
 
                 <!-- main navigation start  -->
-           <nav id="nav">
+                  <nav id="nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
              

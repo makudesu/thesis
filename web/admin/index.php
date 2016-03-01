@@ -14,7 +14,7 @@
     <body>
     
         <header id="head" >
-      <h2><strong><a href="localhost/stretched/admin/index.html">BACK</a></strong></h2>
+      <h2><strong><a href="localhost/stretched/admin/index.html"></a></strong></h2>
         	<p><a href="register.php"><span id="register">Register</span></a></p>
         </header>
         
