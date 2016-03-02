@@ -83,7 +83,7 @@ require_once 'viewing_fucntion.php';
               <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" disabled>
             </div>
 				 <div class="form-group">
-            <label class="col-lg-3 control-label">Confirem Password:</label>
+            <label class="col-lg-3 control-label">Confirm Password:</label>
             <div class="col-lg-8">
               <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" disabled>
             </div>
