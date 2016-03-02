@@ -85,18 +85,13 @@ CREATE TABLE `tblprereg` (
   `Religion` varchar(100) DEFAULT NULL,
   `Email` varchar(100) DEFAULT NULL,
   `Address` varchar(300) DEFAULT NULL,
-  `Guardian` varchar(100) DEFAULT NULL,
-  `Relationship` varchar(100) DEFAULT NULL,
-  `Emergency` varchar(100) DEFAULT NULL,
-  `ERelationship` varchar(100) DEFAULT NULL,
-  `EAddress` varchar(300) DEFAULT NULL,
   `CPnumber` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`userID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8;
 
 /*Data for the table `tblprereg` */
 
-insert  into `tblprereg`(`userID`,`username`,`password`,`YearLevel`,`Status`,`SchoolYear`,`Student_ID`,`Lastname`,`Firstname`,`Middlename`,`Gender`,`BirthDate`,`Age`,`BirthPlace`,`Religion`,`Email`,`Address`,`Guardian`,`Relationship`,`Emergency`,`ERelationship`,`EAddress`,`CPnumber`) values (103,'emmanuel','1322b2a58a24544392a2a47dbfa88affc0d0762dfd0c7490a9aebbeba71eaedf','Grade 7','Old Student','2011-2012','111','Soriano','Emmanuel','Dotimas','Male','August 19, 1992','23','Munguia, Dupax del Norte Nueva Vizcaya','Jehova\'s Witnesses','emcareforjw12@gmail.com','Munguia, Dupax del Norte Nueva Vizcaya','Wilfredo Soriano','Father','Jovita Soriano','Mother','Munguia, Dupax del Norte Nueva Vizcaya','09267953558');
+insert  into `tblprereg`(`userID`,`username`,`password`,`YearLevel`,`Status`,`SchoolYear`,`Student_ID`,`Lastname`,`Firstname`,`Middlename`,`Gender`,`BirthDate`,`Age`,`BirthPlace`,`Religion`,`Email`,`Address`,`CPnumber`) values (103,'emmanuel','1322b2a58a24544392a2a47dbfa88affc0d0762dfd0c7490a9aebbeba71eaedf','Grade 7','Old Student','2011-2012','111','Soriano','Emmanuel','Dotimas','Male','August 19, 1992','23','Munguia, Dupax del Norte Nueva Vizcaya','Jehova\'s Witnesses','emcareforjw12@gmail.com','Munguia, Dupax del Norte Nueva Vizcaya','Wilfredo Soriano','Father','Jovita Soriano','Mother','Munguia, Dupax del Norte Nueva Vizcaya','09267953558');
 
 /*Table structure for table `tblsubjects` */
 

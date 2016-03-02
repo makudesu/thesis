@@ -57,7 +57,7 @@
 	
 	if( $usr->userLogin() ) {
 		//echo "Welcome";	
-		header("location:/stretched/admin/index.html");	
+		header("location:/thesis/web/admin/index.html");	
 	} else {
 		echo "Incorrect Username/Password";	
 	}
