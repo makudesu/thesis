@@ -8,7 +8,7 @@ function dbConnect (){
  	$pwd = 	'';
 	try {
 	   	$conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
-		echo 'Connected succesfully.<br>';
+		echo ' ';
 		
 	}
 	catch (PDOException $e) {

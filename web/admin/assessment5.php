@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Home - Moderna</title>
+    <title>BNHS</title>
     <meta name="description" content="Moderna Responsive HTML5 Template">
     <meta name="author" content="pixel-industry">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -55,23 +55,16 @@
                 <!-- main navigation start  -->
            <nav id="nav">
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                              <li class="active"><a href="index.html">Home</a></li>
                           
                                 <li> <a href="viewprofile.php">View Student Profile</a></li>
-          
-						
-                                <li> <a href="searcheditstudent.php">Edit Student Profile</a></li>
                       
-					
-                                <li> <a href="addgrade.php">Add Student Grade</a></li>
-                       
-					
-                                <li> <a href="/stretched/admin/jQuery/index.php">View Student Grade</a></li>
                     
 					
                                 <li> <a href="assessment.php">Print Assessment</a></li>
                         
-						
+
+		
                                 <li> <a href="mainhome.html">Logout</a></li>
                         
                      

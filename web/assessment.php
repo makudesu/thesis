@@ -50,7 +50,7 @@
             <!-- logo start -->
             <section id="logo">
                 <a href="index.html">
-                    logo
+                    
                 </a>
             </section><!-- logo end -->
 

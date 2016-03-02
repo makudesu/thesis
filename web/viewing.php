@@ -9,7 +9,7 @@ require_once 'viewing_fucntion.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Portfolio | Corlate</title>
+    <title>BNHS</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -54,7 +54,7 @@ require_once 'viewing_fucntion.php';
                             
                                 <li> <a href="viewing.php">View Profile</a></li>
                        
-                                <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Enroll</a></li>
                     
                                 <li> <a href="mainhome.html">Logout</a></li>
 						</ul>
@@ -63,6 +63,8 @@ require_once 'viewing_fucntion.php';
 
         </header><!-- header end -->
     </section><!-- header wrapper end -->
+<br>
+<br>
 
 <form action="update.php" method="post" onsubmit="return validateForm()">
  <div class="container">
@@ -81,7 +83,7 @@ require_once 'viewing_fucntion.php';
               <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" disabled>
             </div>
 				 <div class="form-group">
-            <label class="col-lg-3 control-label">Confirem Password:</label>
+            <label class="col-lg-3 control-label">Confirm Password:</label>
             <div class="col-lg-8">
               <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" disabled>
             </div>
@@ -215,50 +217,17 @@ require_once 'viewing_fucntion.php';
               <input class="form-control" type="text" name="email" value="<?php echo $email ?>" disabled>
             </div>
           </div>
-		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" value="<?php echo $guardian ?>" disabled>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" value="<?php echo $relationship ?>" disabled>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" disabled > 
-            </div>
-          </div>
-		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>" disabled>
-            </div>
-          </div>
-		  
-		  <div class="form-group">
-            <label class="col-md-3 control-label">Address:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>"disabled>
-            </div>
-          </div>
-              
+	
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>" disabled>
+			  
+			  	   <br>  <br>  <br>  <br>    
             </div>
           </div>
 		  
-		 
+	
 		  
 		   
 	<div class="form-group">

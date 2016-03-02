@@ -174,40 +174,6 @@
             </div>
           </div>
 		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" required>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" required>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" required>
-            </div>
-          </div>
-		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" required>
-            </div>
-          </div>
-		  
-		  <div class="form-group">
-            <label class="col-md-3 control-label">Address:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" required>
-            </div>
-          </div>
               
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>

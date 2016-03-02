@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Home - Modern</title>
+    <title>Home - Admin</title>
     <meta name="description" content="Moderna Responsive HTML5 Template">
     <meta name="author" content="pixel-industry">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -50,7 +50,7 @@
             <!-- logo start -->
             <section id="logo">
                 <a href="index.html">
-                    logo
+                  
                 </a>
             </section><!-- logo end -->
           
@@ -82,7 +82,7 @@
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<center><h3><strong><u>Enroll & Edit Profile</u></strong></h3></center>
+<center><h3><strong>Enroll & Edit Profil</strong></h3></center>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 <br><br>
 <center>Enter ID No.:

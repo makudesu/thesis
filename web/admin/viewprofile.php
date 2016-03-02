@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <head>
     <meta charset="utf-8">
     <title>Home - BNHS</title>
@@ -48,6 +48,15 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
+			
+ <!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                    
+                </a>
+            </section><!-- logo end -->
+		
+            <!-- main navigation container start -->
           
             <!-- main navigation container start -->
             <section id="nav-container">
@@ -59,14 +68,7 @@
                           
                                 <li> <a href="viewprofile.php">View Student Profile</a></li>
           
-						
-                                <li> <a href="searcheditstudent.php">Edit Student Profile</a></li>
                       
-					
-                                <li> <a href="addgrade.php">Add Student Grade</a></li>
-                       
-					
-                                <li> <a href="/stretched/admin/jQuery/index.php">View Student Grade</a></li>
                     
 					
                                 <li> <a href="assessment.php">Print Assessment</a></li>
@@ -89,19 +91,10 @@
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<center><h3><strong><u>View Profile</u></strong></h3></center>
-<form name="myform" action="viewing.php" method="get" onsubmit="return validateForm()">
-<br><br>
-<center>Enter ID No.:
-			<input type="text" name="search" class="ed" id="brnu" />
-<input type="submit" value="Submit" />  </center>
-</form>
 
+<iframe width="100%" height="100%" scrolling="no" name="iframe1" src="table.php"></iframe>
     </section><!-- content-wrapper end -->
-<br>
-<br>
-<br>
-<br>
+
     <!-- footer start -->
     <footer id="footer" class="clearfix">
        
@@ -116,16 +109,6 @@
     </footer><!-- footer end -->
 
     <!-- js files -->
-    <script  src="js/jquery-1.7.2.js"></script> <!-- jQuery 1.7.2 -->
-    <script  src="js/jquery.tweetscroll.js"></script> <!-- jQuery tweetscroll plugin -->
-    <script  src="js/socialstream.jquery.js"></script> <!-- Social Networks Feeds -->
-    <script  src="js/jquery.easing.1.2.js"></script><!-- Anything Slider optional plugins -->
-    <script  src="js/jquery.anythingslider.min.js"></script><!-- Anything Slider -->    
-    <script  src="js/jquery.anythingslider.fx.min.js"></script><!-- Anything Slider optional FX extension -->   
-    <script  src="js/jquery.carouFredSel-5.6.4-packed.js"></script><!-- CarouFredSel carousel plugin -->
-    <script  src="js/portfolio.js"></script> <!-- portfolio custom options -->
-    <script  src="js/include.js"></script> <!-- jQuery custom options -->
-    <script  src="js/jquery.placeholder.min.js"></script><!-- jQuery placeholder fix for old browsers -->
 
     <!-- end js files -->
 
