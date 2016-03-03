@@ -48,16 +48,23 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-         
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+          
+            <!-- main navigation container start -->
+            <section id="nav-container">
 
                 <!-- main navigation start  -->
-           <nav id="nav">
+                  <nav id="nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
              
                                 <li> <a href="viewprofile.php">View Profile</a></li>
                       
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
+                                <li> <a href="oldstudents.php">Edit Profile</a></li>
        
                                 <li> <a href="mainhome.html">Logout</a></li>
             </ul>
@@ -72,10 +79,11 @@
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong><u>Choose Grade Level</u></strong></h2></center>
+<center><h2><strong>Choose Grade Level</strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 <center>
+
 <?php
 require_once 'viewing_fucntion.php';
 		$sql = "SELECT YearLevel FROM tblprereg WHERE username = '" . $uname . "';";
@@ -87,7 +95,10 @@ foreach ($rows as $row) {
 		$yearlevel=$row['YearLevel'];
 		if ($yearlevel == 'Grade 7') {
 ?>	
-grade 7
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade7sub.php">Grade 7</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade8sub.php">Grade 8</a></strong></h2></button>
+
 
 <?php		
 		}
@@ -96,7 +107,10 @@ grade 7
 	
 
 ?>
-grade 8
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade8sub.php">Grade 8</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade9sub.php">Grade 9 </a></strong></h2></button>
+
 
 <?php		
 		}
@@ -105,7 +119,9 @@ grade 8
 	
 
 ?>
-grade 9
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade9sub.php">Grade 9 </a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade10sub.php">Grade 10</a></strong></h2></button>
 
 <?php		
 		}
@@ -114,7 +130,9 @@ grade 9
 	
 
 ?>
-grade 10
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade10sub.php">Grade 10</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade11sub.php">Grade 11</a></strong></h2></button>
 
 <?php		
 		}
@@ -123,7 +141,9 @@ grade 10
 	
 
 ?>
-grade 11
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade11sub.php">Grade 11</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade12sub.php">Grade 12</a></strong></h2></button>
 
 <?php		
 		}
@@ -132,7 +152,7 @@ grade 11
 	
 
 ?>
-grade 12
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="grade12sub.php">Grade 12</a></strong></h2></button>
 
 <?php		
 		}
@@ -145,17 +165,6 @@ grade 12
 <?php
 }
 ?>
-<h2><strong><a href="grade7sub.php">Grade 7</a></strong></h2>
-
-<h2><strong><a href="grade8sub.php">Grade 8</a></strong></h2>
-
-<h2><strong><a href="grade9sub.php">Grade 9 </a></strong></h2>
-
-<h2><strong><a href="grade10sub.php">Grade 10</a></strong></h2>
-
-<h2><strong><a href="grade11sub.php">Grade 11</a></strong></h2>
-
-<h2><strong><a href="grade12sub.php">Grade 12</a></strong></h2>
 </center>
 </form>
 		

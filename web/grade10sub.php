@@ -5,16 +5,16 @@ require_once 'viewing_fucntion.php';
 		$stmt = $conn->prepare($sql);
 		// Now we execute the query passing an array toe execute();
 		$results = $stmt->execute();
-foreach ($rows as $row) {
-		$yearlevel=$row['YearLevel'];
-		print $yearlevel;
-
-}
+		foreach ($rows as $row) {
+		$yearlevel=$row['YearLevel'];		
+		}
 ?>
+
+
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Home - Moderna</title>
+    <title>Home - BNHS</title>
     <meta name="description" content="Moderna Responsive HTML5 Template">
     <meta name="author" content="pixel-industry">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -61,19 +61,22 @@ foreach ($rows as $row) {
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-        
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+          
             <!-- main navigation container start -->
             <section id="nav-container">
 
                 <!-- main navigation start  -->
-      <nav id="nav">
+                  <nav id="nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
              
-                                <li> <a href="viewprofile.php">View Profile</a></li>
-                      
-                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
-       
+                                <li> <a href="viewing.php">View Profile</a></li>
+                    
                                 <li> <a href="mainhome.html">Logout</a></li>
             </ul>
 			</nav>
@@ -83,13 +86,48 @@ foreach ($rows as $row) {
         </header><!-- header end -->
     </section><!-- header wrapper end -->
 
+	<!-- page-title start -->
+        <section id="page-title">
+            <center><h1>You are Successfully Enrolled</h1></center>
+        </section><!-- page-title end -->
+
+<!-- content wrapper start -->
+    <section id="content-wrapper">
+	<div class="container">
+	<center><strong>Please Fillup the Assessment...Thank You</strong></center>
+	
+<br><br>
+<form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
+
+<div class="form-group">
+&nbsp;&nbsp;&nbsp;&nbsp;Student  ID: &nbsp;<input type="text" name="studentid" class="ed" id="brnu" />
+Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
+<label class="col-lg-3 control-label">Grade Level:</label>
+		<select id="level" class="form-control" name="level" required>
+				<option></option>
+				  <option>Grade 7</option>
+                  <option>Grade 8</option>
+				  <option>Grade 9</option>
+                  <option>Grade 10</option>
+				  <option>Grade 11</option>
+                  <option>Grade 12</option>
+                </select>
+            
+            <div class="col-lg-8">
+			
+              <div class="ui-select">
+			  
+                
+              </div>
+            </div>
+          </div>
     
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
 <div class="container">
 
-		<center><h2><strong><u>SUBJECTS</u></strong></h2></center>
+		<br><br><center><h2><strong>SUBJECTS</strong></h2></center>
       <div class="row">
                 <table class="table table-striped table-bordered">
                   <thead>
@@ -117,12 +155,72 @@ foreach ($rows as $row) {
                   </tbody>
             </table>
 			
-		
+		<br><center><h2><strong>Assessment of Fees</strong></h2></center><br>
+			
+	<table style="width:80%">
+<th><tr><b>Description</b></th></tr>
+     &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
+    <th><tr><b><u>Amount</u></b></th></tr>
 	
-		  <form action="services.html" method="post" >
-<center>
-<input type="submit" value="OK" />  </center>
-</form>
+	<tr>
+    <td>Admission</td>
+    <td></td> 
+    <td style="text-align:right">P300.00</td>
+  </tr>
+  <tr>
+    <td>Exam and Stationary</td>
+    <td></td> 
+    <td style="text-align:right">P100.00</td>
+  </tr>
+  <tr>
+    <td>Games and Sports</td>
+    <td></td> 
+    <td style="text-align:right">P100.00</td>
+  </tr>
+  <tr>
+    <td>Library</td>
+    <td></td> 
+    <td style="text-align:right">P50.00</td>
+  </tr>
+  <tr>
+    <td>Journals</td>
+    <td></td> 
+    <td style="text-align:right">P100.00</td>
+  </tr>
+  <tr>
+    <td>Computer Fees</td>
+    <td></td> 
+    <td style="text-align:right">P1000.00</td>
+  </tr>
+<tr>
+    <td> </td>
+    <td> </td> 
+    <td> </td>
+  </tr> 
+  <tr>
+    <td> </td>
+    <td> </td> 
+    <td> </td>
+  </tr> 
+ <tr>
+    <td><h4><br><i>Total Tuition Fee</i></h4></td>
+    <td></td> 
+    <td style="text-align:right"><h4><br><i>P1650.00</i></h4></td>
+  </tr>
+ 
+
+</table>
+
+
+        </div>
+	
+		  <FORM>
+<center><INPUT TYPE="button" name="print" value="PRINT" onClick="window.print()"></center>
+</FORM>
 
     </section><!-- content-wrapper end -->
 <br>

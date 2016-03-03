@@ -45,12 +45,7 @@
 		$religion=$row['Religion'];
 		$email=$row['Email'];
 		$presentadd=$row['Address'];
-		$guardian=$row['Guardian'];
-		$relationship=$row['Relationship'];
-		$emergency=$row['Emergency'];
-		$erelationship=$row['ERelationship'];
-		$eaddress=$row['EAddress'];
-		$emergencyaddress=$row['EAddress'];
+		
 		$cp=$row['CPnumber'];
 		
 		}

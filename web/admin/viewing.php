@@ -7,7 +7,7 @@
 	if (isset($_GET['search'])) {
 		// Create the query
 		$data = "%".$_GET['search']."%";
-		$sql = 'SELECT * FROM tblprereg WHERE Student_ID like ?';
+		$sql = 'SELECT * FROM tblprereg WHERE Firstname like ?';
 		// we have to tell the PDO that we are going to send values to the query
 		$stmt = $conn->prepare($sql);
 		// Now we execute the query passing an array toe execute();
@@ -43,12 +43,7 @@
 		$religion=$row['Religion'];
 		$email=$row['Email'];
 		$presentadd=$row['Address'];
-		$guardian=$row['Guardian'];
-		$relationship=$row['Relationship'];
-		$emergency=$row['Emergency'];
-		$erelationship=$row['ERelationship'];
-		$eaddress=$row['EAddress'];
-		$emergencyaddress=$row['EAddress'];
+		
 		$cp=$row['CPnumber'];
 		
 		}
@@ -62,7 +57,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Portfolio | Corlate</title>
+    <title>BNHS</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -89,13 +84,18 @@
     <link rel="stylesheet" title="activestyle" href="css/default-blue.css" media="screen" /> <!--default blue color style-->  
 </head><!--/head-->
 <body>
-
+<!-- header start -->
+        <header id="header" class="clearfix">
      <!-- header wrapper start -->
     <section id="header-wrapper">
 
-        <!-- header start -->
-        <header id="header" class="clearfix">
+        
             <!-- logo start -->
+			<section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
            
             <!-- main navigation container start -->
             <section id="nav-container">
@@ -106,35 +106,40 @@
                         <li class="active"><a href="index.html">Home</a></li>
                           
                                 <li> <a href="viewprofile.php">View Student Profile</a></li>
-          
-						
-                                <li> <a href="searcheditstudent.php">Edit Student Profile</a></li>
                       
-					
-                                <li> <a href="addgrade.php">Add Student Grade</a></li>
-                       
-					
-                                <li> <a href="/stretched/admin/jQuery/index.php">View Student Grade</a></li>
                     
 					
                                 <li> <a href="assessment.php">Print Assessment</a></li>
                         
-						
+
+		
                                 <li> <a href="mainhome.html">Logout</a></li>
+								
+							
+
+
                         
                      
 </ul>
+
 </nav>
             </section><!-- main navigation container end -->
 
         </header><!-- header end -->
     </section><!-- header wrapper end -->
+	
 
+<form name="myform" action="viewing.php" method="get" onsubmit="return validateForm()">
+    <center> <br><br><h5>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" value= "First Name" name="search" class="ed" id="brnu" />
+<input type="submit" value="Submit" /> </center><br></h5>
 <form action="update.php" method="post" onsubmit="return validateForm()">
 
  <div class="container">
-    
-<br><br>
+
+
       <!-- edit form column -->
       <div class="col-md-9 personal-info">
         <div class="alert alert-info alert-dismissable">
@@ -149,29 +154,26 @@
 		  <div class="form-group">
             <label class="col-lg-3 control-label">Username:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text"maxlength="30" required autofocus  name="username" value="<?php echo $username ?>" required>
+              <input class="form-control" type="text"maxlength="30" disabled autofocus  name="username" value="<?php echo $username ?>" disabled>
             </div>
 		 <div class="form-group">
             <label class="col-lg-3 control-label">Password:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" required>
+              <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" disabled>
             </div>
 				 <div class="form-group">
             <label class="col-lg-3 control-label">Confirem Password:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" required>
+              <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" disabled>
             </div>
+			
 		
-		
-	
-		
-		
-		  <div class="form-group">
+		<div class="form-group">
             <label class="col-lg-3 control-label">Year/Grade Level:</label>
             <div class="col-lg-8">
               <div class="ui-select">
-                <select id="level" class="form-control" name="level" required>
-				<option></option>
+                <select id="level" class="form-control" name="level" value="<?php echo $level?>" disabled>
+				<option><?php echo $level?></option>
 				  <option>Grade 7</option>
                   <option>Grade 8</option>
 				  <option>Grade 9</option>
@@ -183,12 +185,12 @@
             </div>
           </div>
 		  
-		   <div class="form-group">
+		  <div class="form-group">
             <label class="col-lg-3 control-label">Enrollment Status:</label>
             <div class="col-lg-8">
-              <div class="ui-select">
-                <select id="status" class="form-control" name="status" required>
-				<option></option>
+				<div class="ui-select">
+				<select id="status" class="form-control" name="status" value="<?php echo $status?>" disabled>
+				<option><?php echo $status?></option>
                   <option>New Student</option>
                   <option>Old Student</option>
 				  <option>Transferee</option>
@@ -197,45 +199,46 @@
             </div>
           </div>
 		  
-		   <div class="form-group">
+		  <div class="form-group">
             <label class="col-lg-3 control-label">School Year:</label>
             <div class="col-lg-8">
               <div class="ui-select">
-                <select id="status" class="form-control" name="status" required>
+                <select id="year" class="form-control" name="year" value="<?php echo $year?>" disabled>
+				<option><?php echo $year?></option>
 				  <option>2010-2011</option>
-                  <option>2011-2012</option>
-				  <option>2012-2013</option>
+				  <option>2011-2012</option>
+                  <option>2012-2013</option>
 				  <option>2013-2014</option>
-				  <option>2014-2015</option>
-				  <option>2015-2016</option>
+                  <option>2014-2015</option>
+				  <option>2015-2016</option>                
                 </select>
               </div>
             </div>
           </div>
-
+		
 		  <div class="form-group">
             <label class="col-lg-3 control-label">Student ID:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="studentid" value="<?php echo $studentid ?>">
+              <input class="form-control" type="text" name="studentid" value="<?php echo $studentid ?>" disabled>
             </div>
 		  
 		<div class="form-group">
             <label class="col-lg-3 control-label">Last name:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="lastname" value="<?php echo $lastname?>" required>
+              <input class="form-control" type="text" name="lastname" value="<?php echo $lastname?>" disabled>
             </div>
 			
           <div class="form-group">
             <label class="col-lg-3 control-label">First name:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="firstname" value="<?php echo $firstname ?>" required>
+              <input class="form-control" type="text" name="firstname" value="<?php echo $firstname ?>" disabled>
             </div>
           </div>
          
 		<div class="form-group">
             <label class="col-lg-3 control-label">Middle name:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="middlename" value="<?php echo $middlename ?>" required>
+              <input class="form-control" type="text" name="middlename" value="<?php echo $middlename ?>" disabled>
             </div>
           </div>
 		  
@@ -243,7 +246,7 @@
             <label class="col-lg-3 control-label">Gender:</label>
             <div class="col-lg-8">
               <div class="ui-select">
-                <select id="gender" class="form-control" name="gender" value="<?php echo $gender?>" required>
+                <select id="gender" class="form-control" name="gender" value="<?php echo $gender?>" disabled>
 				<option><?php echo $gender?></option>
                   <option>Female</option>
                   <option>Male</option>
@@ -255,85 +258,53 @@
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Birth Date:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="bdate" value="<?php echo $bdate ?>" required>
+              <input class="form-control" type="text" name="bdate" value="<?php echo $bdate ?>" disabled>
             </div>
           </div>
 		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Age:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="age" value="<?php echo $age ?>" required>
+              <input class="form-control" type="text" name="age" value="<?php echo $age ?>" disabled>
             </div>
           </div>
 		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Birth Place:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="bplace" value="<?php echo $bplace?>" required>
+              <input class="form-control" type="text" name="bplace" value="<?php echo $bplace?>" disabled>
             </div>
           </div>
 		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Religion:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="religion" value="<?php echo $religion ?>" required>
+              <input class="form-control" type="text" name="religion" value="<?php echo $religion ?>" disabled>
             </div>
           </div>
 		  
 		   <div class="form-group">
             <label class="col-lg-3 control-label">Present Address:</label>
             <div class="col-lg-8">
-              <input class="form-control" type="text" name="presentadd" value="<?php echo $presentadd ?>" required>
+              <input class="form-control" type="text" name="presentadd" value="<?php echo $presentadd ?>" disabled>
             </div>
           </div>
 
 		    <div class="form-group">
             <label class="col-md-3 control-label">Email:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="email" value="<?php echo $email ?>" required>
+              <input class="form-control" type="text" name="email" value="<?php echo $email ?>" disabled>
             </div>
           </div>
-		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" value="<?php echo $guardian ?>" required>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" value="<?php echo $relationship ?>" required>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" value="<?php echo $emergency ?>" >
-            </div>
-          </div>
-		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" value="<?php echo $erelationship?>">
-            </div>
-          </div>
-		  
-		  <div class="form-group">
-            <label class="col-md-3 control-label">Address:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="eaddress" value="<?php echo $eaddress ?>">
-            </div>
-          </div>
-              
+	
 			  <div class="form-group">
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
-              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>">
+              <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>" disabled>
+			  
+			  <br><br><br>
             </div>
+			
           </div>
 		  
 	<div class="form-group">
@@ -343,6 +314,8 @@
 			  </center>
           </div>
         </form>
+		
+		
 
 
     
