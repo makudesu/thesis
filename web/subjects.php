@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <head>
     <meta charset="utf-8">
     <title>Home - Moderna</title>
