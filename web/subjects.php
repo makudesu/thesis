@@ -48,23 +48,16 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-            <section id="logo">
-                <a href="index.html">
-                   
-                </a>
-            </section><!-- logo end -->
-          
-            <!-- main navigation container start -->
-            <section id="nav-container">
+         
 
                 <!-- main navigation start  -->
-                  <nav id="nav">
+           <nav id="nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
              
                                 <li> <a href="viewprofile.php">View Profile</a></li>
                       
-                                <li> <a href="oldstudents.php">Edit Profile</a></li>
+                                <li> <a href="searcheditstudent.php">Edit Profile</a></li>
        
                                 <li> <a href="mainhome.html">Logout</a></li>
             </ul>
@@ -79,7 +72,7 @@
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong>Choose Grade Level</strong></h2></center>
+<center><h2><strong><u>Choose Grade Level</u></strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 <center>
