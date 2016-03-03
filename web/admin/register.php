@@ -16,7 +16,7 @@
         <header id="head" >
         		<header id="head" >
 				<p><a href="localhost/thesis/web/admin/mainhome.html"><span id="register">Home</span></a></p>
-        	<p><a href="mainhome.html"><span id="register">Home</span></a></p>
+        	
         </header>
         
         <div id="main-wrapper">

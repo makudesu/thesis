@@ -82,7 +82,7 @@
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong><u>FIll up the Assessment</u></strong></h2></center>
+<center><h2><strong>FIll up the Assessment</strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 
@@ -90,7 +90,7 @@
 Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
 Year Level:&nbsp;<input type="text" name="level" class="ed" id="brnu" />
 </form>
-		<center><h2><strong><u>SUBJECTS</u></strong></h2></center>
+		<center><h2><strong>SUBJECTS</strong></h2></center>
       <div class="row">
                 <table class="table table-striped table-bordered">
                   <thead>

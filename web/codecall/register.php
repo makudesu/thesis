@@ -22,17 +22,14 @@ window.onload=function() {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sign-up</title>
+        <title> Secured Login</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
-		 <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome.min.css" rel="stylesheet">
-    <link href="prettyPhoto.css" rel="stylesheet">
-    <link href="animate.min.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
+		<link href="font-awesome.min.css" rel="stylesheet">
+		<link href="animate.min.css" rel="stylesheet">
+		<link href="responsive.css" rel="stylesheet">
     </head>
     
-    <body>
+    <body text=blue>
         <header id="head" >
         
         	<!-- logo start -->

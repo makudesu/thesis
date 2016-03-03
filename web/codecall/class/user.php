@@ -117,9 +117,8 @@
 				$stmt->bindValue( "cp", $this->cp, PDO::PARAM_STR );
 				
 				$stmt->execute();
-				echo "Successfully Recorded ";
-				header("location:/thesis/web/codecall/index.php");	
-			}catch( PDOException $e ) {
+				return "Registration Successful <br/> <a href='index.php'>Login Now</a>";	
+			}	catch( PDOException $e ) {
 				return $e->getMessage();
 			}
 	 }
