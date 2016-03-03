@@ -118,7 +118,7 @@
 				
 				$stmt->execute();
 				echo "Successfully Recorded ";
-				header("location:/thesis/web/codecall/index.php");	
+				header("location:../index.php");	
 			}catch( PDOException $e ) {
 				return $e->getMessage();
 			}
