@@ -117,8 +117,7 @@
 				$stmt->bindValue( "cp", $this->cp, PDO::PARAM_STR );
 				
 				$stmt->execute();
-				echo "Successfully Recorded ";
-				header("location:../index.php");	
+				return "Registration Successful <br/> <a href='index.php'>Login Now</a>";	
 			}catch( PDOException $e ) {
 				return $e->getMessage();
 			}
