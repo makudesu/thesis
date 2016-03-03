@@ -37,7 +37,7 @@
                         	<input type="password" maxlength="30" required name="password" />
                     	</li>
                     	<li class="buttons">
-                        	<center><input type="button" name="login" value="Log me in" onclick="location='index.html'" /></center>
+                        	<center><input type="submit" name="login" value="Log me in" /></center>
                             
                     	</li>
                     
