@@ -100,18 +100,10 @@ require_once 'viewing_fucntion.php';
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 
 <div class="form-group">
-&nbsp;&nbsp;&nbsp;&nbsp;Student  ID: &nbsp;<input type="text" name="studentid" class="ed" id="brnu" />
-Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
-<label class="col-lg-3 control-label">Grade Level:</label>
-		<select id="level" class="form-control" name="level" required>
-				<option></option>
-				  <option>Grade 7</option>
-                  <option>Grade 8</option>
-				  <option>Grade 9</option>
-                  <option>Grade 10</option>
-				  <option>Grade 11</option>
-                  <option>Grade 12</option>
-                </select>
+Student  ID: &nbsp;<font color="black"><?php echo $studentid ?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Name:&nbsp;<font color="black"><?php echo $lastname?> <?php echo $firstname?> <?php echo $middlename?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Grade: <font color="black"><?php echo $level?></font>
+&nbsp;&nbsp;&nbsp;&nbsp;
             
             <div class="col-lg-8">
 			
@@ -215,7 +207,22 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
 
 
         </div>
-	
+	<center>
+		<br><br><br><br>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+		<u>
+			Mark Kevin H. Agustin<br>
+		</u>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+			Regitrar
 
 
     </section><!-- content-wrapper end -->

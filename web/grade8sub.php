@@ -99,18 +99,10 @@ require_once 'viewing_fucntion.php';
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 
 <div class="form-group">
-&nbsp;&nbsp;&nbsp;&nbsp;Student  ID: &nbsp;<input type="text" name="studentid" class="ed" id="brnu" />
-Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
-<label class="col-lg-3 control-label">Grade Level:</label>
-		<select id="level" class="form-control" name="level" required>
-				<option></option>
-				  <option>Grade 7</option>
-                  <option>Grade 8</option>
-				  <option>Grade 9</option>
-                  <option>Grade 10</option>
-				  <option>Grade 11</option>
-                  <option>Grade 12</option>
-                </select>
+Student  ID: &nbsp;<font color="black"><?php echo $studentid ?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Name:&nbsp;<font color="black"><?php echo $lastname?> <?php echo $firstname?> <?php echo $middlename?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Grade: <font color="black"><?php echo $level?></font>
+&nbsp;&nbsp;&nbsp;&nbsp;
             
             <div class="col-lg-8">
 			
@@ -162,38 +154,39 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
 	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
     <th><tr><b><u>Amount</u></b></th></tr>
 	
 	<tr>
     <td>Admission</td>
     <td></td> 
-    <td>P300.00</td>
+    <td style="text-align:right">P300.00</td>
   </tr>
   <tr>
     <td>Exam and Stationary</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Games and Sports</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Library</td>
     <td></td> 
-    <td>P50.00</td>
+    <td style="text-align:right">P50.00</td>
   </tr>
   <tr>
     <td>Journals</td>
     <td></td> 
-    <td>P100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
     <td>Computer Fees</td>
     <td></td> 
-    <td>P1000.00</td>
+    <td style="text-align:right">P1000.00</td>
   </tr>
 <tr>
     <td> </td>
@@ -208,14 +201,29 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
  <tr>
     <td><h4><br><i>Total Tuition Fee</i></h4></td>
     <td></td> 
-    <td><h4><br><i>P1650.00</i></h4></td>
+    <td style="text-align:right"><h4><br><i>P1650.00</i></h4></td>
   </tr>
  
 </table>
 
 
         </div>
-		
+		<center>
+		<br><br><br><br>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+		<u>
+			Mark Kevin H. Agustin<br>
+		</u>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+			Regitrar
 
 
     </section><!-- content-wrapper end -->

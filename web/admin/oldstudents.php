@@ -35,7 +35,7 @@
 		$studentid=$row['Student_ID'];
 		$lastname=$row['Lastname'];
 		$firstname=$row['Firstname'];
-		$middlename=$row['Middlename'];
+		$middlename=$row['Firstname'];
 		$gender=$row['Gender'];
 		$bdate=$row['BirthDate'];
 		$age=$row['Age'];
