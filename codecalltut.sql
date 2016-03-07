@@ -1,6 +1,6 @@
 /*
-SQLyog Enterprise - MySQL GUI v8.05 
-MySQL - 5.6.21-log : Database - codecalltut
+SQLyog Ultimate - MySQL GUI v8.2 
+MySQL - 5.5.16-log : Database - codecalltut
 *********************************************************************
 */
 
@@ -8,35 +8,13 @@ MySQL - 5.6.21-log : Database - codecalltut
 
 /*!40101 SET SQL_MODE=''*/;
 
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`codecalltut` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
 USE `codecalltut`;
-
-/*Table structure for table `tblgrades` */
-
-DROP TABLE IF EXISTS `tblgrades`;
-
-CREATE TABLE `tblgrades` (
-  `id` bigint(10) NOT NULL AUTO_INCREMENT,
-  `Student_ID` varchar(10) DEFAULT NULL,
-  `Level` varchar(100) DEFAULT NULL,
-  `SchoolYear` varchar(100) DEFAULT NULL,
-  `Filipino` varchar(10) DEFAULT NULL,
-  `English` varchar(10) DEFAULT NULL,
-  `Mathematics` varchar(10) DEFAULT NULL,
-  `Science` varchar(10) DEFAULT NULL,
-  `TLE` varchar(10) DEFAULT NULL,
-  `History` varchar(10) DEFAULT NULL,
-  `MAPEH` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
-
-/*Data for the table `tblgrades` */
-
-insert  into `tblgrades`(`id`,`Student_ID`,`Level`,`SchoolYear`,`Filipino`,`English`,`Mathematics`,`Science`,`TLE`,`History`,`MAPEH`) values (9,'123','Grade 8','123','123','1','2','3','4','5','6');
 
 /*Table structure for table `tblprereg` */
 
@@ -67,11 +45,11 @@ CREATE TABLE `tblprereg` (
   `EAddress` varchar(300) DEFAULT NULL,
   `CPnumber` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 /*Data for the table `tblprereg` */
 
-insert  into `tblprereg`(`userID`,`username`,`password`,`YearLevel`,`Status`,`SchoolYear`,`Student_ID`,`Lastname`,`Firstname`,`Middlename`,`Gender`,`BirthDate`,`Age`,`BirthPlace`,`Religion`,`Email`,`Address`,`Guardian`,`Relationship`,`Emergency`,`ERelationship`,`EAddress`,`CPnumber`) values (99,'123','fa152e88420d2f2fee939400e6d522f9dc9c1fb6a81373ebd1b1e79e69d8e39d','First Year','New Student','2010-2011','123','klj','lkj','kj','Female','kjh','8','lj','lkj','lkj','klj','lkj','lkj','lkj','lkj','lkj','klj'),(100,'321','e4e75c0dc857ec2b9edca68740440b804cff07d5ec79bec8a3c6b7a1c37d8d76','Grade 7','Old Student','2015-2016','321','ljklj','ljl','kjl','Female','lkjl','lkj','lkj','lkj','lkjl','lkj','kjl','kjl','kjlkj','lkjkj','lkjl','jlkj');
+insert  into `tblprereg`(`userID`,`username`,`password`,`YearLevel`,`Status`,`SchoolYear`,`Student_ID`,`Lastname`,`Firstname`,`Middlename`,`Gender`,`BirthDate`,`Age`,`BirthPlace`,`Religion`,`Email`,`Address`,`Guardian`,`Relationship`,`Emergency`,`ERelationship`,`EAddress`,`CPnumber`) values (105,'Emmanuel','1322b2a58a24544392a2a47dbfa88affc0d0762dfd0c7490a9aebbeba71eaedf','Grade 8','Old Student','2010-2011','111','Soriano','Emmanuel','Dotimas','Male','August 19, 1992','23','Munguia, Dupax del Norte Nueva Vizcaya','Jehova\'s Witnesses','emcareforjw12@gmail.com','Munguia, Dupax del Norte Nueva Vizcaya',NULL,NULL,NULL,NULL,'Munguia, Dupax del Norte Nueva Vizcaya','09267953558'),(106,'Raymond','bfd09491b6fdef174b4b28702900bb28d5664ae55bd5f42489d65c24c0133957','Grade 9','Old Student','2012-2013','222','Cuaresma','Raymond','Lubong','Male','October 14, 1994','20','Bambang Nueva Vizcaya','Roman Catolic','raymondcuaresma21@yahoo.com','Bambang Nueva Vizcaya',NULL,NULL,NULL,NULL,'Bambang Nueva Vizcaya','09368729236'),(107,'Alona','c7566ffd7b1cd9d4f6a82d408426837e29c4f8c8592d45c012fea990115293bc','Grade 10','Old Student','2010-2011','333','Vargaz','Alona mae','Viloria','Female','May 30, 1994','24','Munguia, Dupax del Norte Nueva Vizcaya','INC','alonamae@yahoo.com','Munguia, Dupax del Norte Nueva Vizcaya',NULL,NULL,NULL,NULL,'Munguia, Dupax del Norte Nueva Vizcaya','09366536242');
 
 /*Table structure for table `tblsubjects` */
 
@@ -88,6 +66,18 @@ CREATE TABLE `tblsubjects` (
 
 insert  into `tblsubjects`(`RecNo`,`Level`,`Subject`) values (1,'Grade 7','English 1'),(2,'Grade 7','Mathematics 1'),(3,'Grade 7','Filipino 1'),(4,'Grade 7','Science 1'),(5,'Grade 7','TLE 1'),(6,'Grade 7','MAPEH 1'),(7,'Grade 8','English 2'),(8,'Grade 8','Mathematics 2'),(9,'Grade 8','Filipino 2'),(10,'Grade 8','Science 2'),(11,'Grade 8','TLE 2'),(12,'Grade 8','MAPEH 2'),(13,'Grade 9','English 3'),(14,'Grade 9','Mathematics 3'),(15,'Grade 9','Filipino 3'),(16,'Grade 9','Science 3'),(17,'Grade 9','TLE 3'),(18,'Grade 9','MAPEH 3');
 
+/*Table structure for table `tblyear` */
+
+DROP TABLE IF EXISTS `tblyear`;
+
+CREATE TABLE `tblyear` (
+  `year_id` int(11) NOT NULL AUTO_INCREMENT,
+  `Year/Grade` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`year_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tblyear` */
+
 /*Table structure for table `users` */
 
 DROP TABLE IF EXISTS `users`;
@@ -97,11 +87,11 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varbinary(250) NOT NULL,
   PRIMARY KEY (`userID`,`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 /*Data for the table `users` */
 
-insert  into `users`(`userID`,`username`,`password`) values (18,'admin','65b07af0391855176483c0949c23e487742d965f589f31ee05a1045d6a110812');
+insert  into `users`(`userID`,`username`,`password`) values (20,'admin','65b07af0391855176483c0949c23e487742d965f589f31ee05a1045d6a110812');
 
 /*Table structure for table `name` */
 
@@ -110,10 +100,10 @@ DROP TABLE IF EXISTS `name`;
 /*!50001 DROP VIEW IF EXISTS `name` */;
 /*!50001 DROP TABLE IF EXISTS `name` */;
 
-/*!50001 CREATE TABLE `name` (
-  `Student_ID` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
-  `Name` varchar(206) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 */;
+/*!50001 CREATE TABLE  `name`(
+ `Student_ID` varchar(10) ,
+ `Name` varchar(206) 
+)*/;
 
 /*Table structure for table `section` */
 
@@ -122,12 +112,12 @@ DROP TABLE IF EXISTS `section`;
 /*!50001 DROP VIEW IF EXISTS `section` */;
 /*!50001 DROP TABLE IF EXISTS `section` */;
 
-/*!50001 CREATE TABLE `section` (
-  `Student_ID` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
-  `Name` varchar(206) CHARACTER SET utf8 DEFAULT NULL,
-  `YearLevel` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
-  `SchoolYear` varchar(100) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 */;
+/*!50001 CREATE TABLE  `section`(
+ `Student_ID` varchar(10) ,
+ `Name` varchar(206) ,
+ `YearLevel` varchar(100) ,
+ `SchoolYear` varchar(100) 
+)*/;
 
 /*View structure for view name */
 
@@ -145,3 +135,5 @@ DROP TABLE IF EXISTS `section`;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

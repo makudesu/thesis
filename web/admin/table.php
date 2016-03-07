@@ -24,7 +24,18 @@ function dbConnect (){
  //using dbconnect to connect to database
 	$conn = dbConnect();
 //query database
-		$sql = "SELECT * FROM tblprereg;";
+		$sql = "SELECT Student_ID, 
+				CONCAT(Lastname, ', ', Firstname, ' ', LEFT(Middlename, 1),'.') AS nagan, 
+				YearLevel, 
+				Status, 
+				SchoolYear, 
+				Age, 
+				BirthDate, 
+				BirthPlace, 
+				Religion,
+				Address 
+				FROM tblprereg
+				ORDER BY Lastname ASC";
 		// we have to tell the PDO that we are going to send values to the query
 		$stmt = $conn->prepare($sql);
 		// Now we execute the query passing an array toe execute();
@@ -37,10 +48,12 @@ function dbConnect (){
 <table class="pure-table">
     <thead>
         <tr>
-            <th>PK</th>
+            <th>ID</th>
             <th>Name</th>
             <th>YearLevel</th>
             <th>Status</th>
+            <th>Age</th>
+			<th>Address</th>
         </tr>
     </thead>
 
@@ -49,12 +62,16 @@ function dbConnect (){
 <?php	
 		foreach ($rows as $row) {
 ?>
-
+		
         <tr class="pure-table-odd">
-            <td><?php print $row['userID'] ?></td>
-            <td><?php print $row['username'] ?></td>
+		
+			<td><?php print $row['Student_ID'] ?></td>
+            <td><?php print $row['nagan'] ?></td>
 			<td><?php print $row['YearLevel'] ?></td>
             <td><?php print $row['Status'] ?></td>
+			<td><?php print $row['Age'] ?></td>
+            <td><?php print $row['Address'] ?></td>
+		
         </tr>
 
 <?php

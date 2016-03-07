@@ -96,25 +96,16 @@ require_once 'viewing_fucntion.php';
 		<!-- content wrapper start -->
     <section id="content-wrapper">
 	<div class="container">
-	<center><strong>Please Fillup the Assessment...Thank You</strong></center>
-	
-<br><br>
+<br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
 
 <div class="form-group">
-&nbsp;&nbsp;&nbsp;&nbsp;Student  ID: &nbsp;<input type="text" name="studentid" class="ed" id="brnu" />
-Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
-<label class="col-lg-3 control-label">Grade Level:</label>
-		<select id="level" class="form-control" name="level" required>
-				<option></option>
-				  <option>Grade 7</option>
-                  <option>Grade 8</option>
-				  <option>Grade 9</option>
-                  <option>Grade 10</option>
-				  <option>Grade 11</option>
-                  <option>Grade 12</option>
-                </select>
-            
+Student  ID: &nbsp;<font color="black"><?php echo $studentid ?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Name:&nbsp;<font color="black"><?php echo $lastname?> <?php echo $firstname?> <?php echo $middlename?></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Grade: <font color="black"><?php echo $level?></font>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
             <div class="col-lg-8">
 			
               <div class="ui-select">
@@ -219,28 +210,30 @@ Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
 
 
         </div>
-	
-		  <FORM>
-<center><INPUT TYPE="button" name="print" value="PRINT" onClick="window.print()"></center>
-</FORM>
+	<center>
+		<br><br><br><br>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+		<u>
+			Mark Kevin H. Agustin<br>
+		</u>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+			Regitrar
+
 
     </section><!-- content-wrapper end -->
 <br>
 <br>
 <br>
 <br>
-    <!-- footer start -->
-    <footer id="footer" class="clearfix">
-       
-
-        <!-- copyright start -->
-        <section class="container_12 clearfix">
-            <section class="copyright">
-                <p>Copyright BNHS Enrollment System, Bambang Nueva Vizcaya. <span class="find-out-more"></span></p>
-                <a class="to-top-link"><img src="img/to-top.png" class="to-top" alt="back to top"/></a>
-            </section>
-        </section><!-- copyright end -->
-    </footer><!-- footer end -->
+    
 
     <!-- js files -->
     <script  src="js/jquery-1.7.2.js"></script> <!-- jQuery 1.7.2 -->

@@ -37,8 +37,8 @@
                         	<input type="password" maxlength="30" required name="password" />
                     	</li>
                     	<li class="buttons">
-                        	<input type="button" name="login" value="Log me in" onclick="location='index.html'" />
-                            <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+                        	<center><input type="submit" name="login" value="Log me in" /></center>
+                            
                     	</li>
                     
                 	</ul>

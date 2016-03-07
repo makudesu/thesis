@@ -16,7 +16,7 @@
     <body>
     
         <header id="head" >
-        	<h1><a href="/thesis/web/admin/index.html"></a></h1>
+        	<h1><a href="/thesis/web/index.html"></a></h1>
         	
         </header>
         
@@ -34,8 +34,8 @@
                         	<input type="password" maxlength="30" required name="password" />
                     	</li>
                     	<li class="buttons">
-                        	<input type="submit" name="login" value="Log me in" />
-						    <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+                        	<center><input type="submit" name="login" value="Log me in" /></center>
+						    
                             
                     	</li>
                     
