@@ -216,12 +216,14 @@ require_once 'viewing_fucntion.php';
             <label class="col-md-3 control-label">Contact No.:</label>
             <div class="col-md-8">
               <input class="form-control" type="text" name="cp" value="<?php echo $cp ?>"> <br>
+			  
+			 &nbsp;&nbsp; <input type="submit" name="Submit" value="NEXT" id="button1" /> 
 			</div>
           </div>
 		  
 
 	
-			 <center> <input type="submit" name="Submit" value="NEXT" id="button1" /> </center>
+			
 		
     <br><br><br><br>
 	</form>
