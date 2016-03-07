@@ -103,19 +103,6 @@ require_once 'viewing_fucntion.php';
             </div>
 		
 		   <div class="form-group">
-            <label class="col-lg-3 control-label">Enrollment Status:</label>
-            <div class="col-lg-8">
-              <div class="ui-select">
-                <select id="status" class="form-control" name="status" required>
-				<option></option>
-                  <option>New Student</option>
-                  <option>Old Student</option>
-                </select>
-              </div>
-            </div>
-          </div>
-		  
-		   <div class="form-group">
             <label class="col-lg-3 control-label">School Year:</label>
             <div class="col-lg-8">
 			<div class="ui-select">
