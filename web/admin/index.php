@@ -4,17 +4,22 @@
 
 <?php if( !(isset( $_POST['login'] ) ) ) { ?>
 
+<!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    <link rel="icon" type="image/x-icon" href="favicon.jpg" />  
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secured Login</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
+	
     
     <body>
     
         <header id="head" >
-      <h2><strong><a href="localhost/stretched/admin/index.html">BACK</a></strong></h2>
+      <h2><strong><a href="mainhome.html"></a></strong></h2>
         	<p><a href="register.php"><span id="register">Register</span></a></p>
         </header>
         
@@ -32,8 +37,8 @@
                         	<input type="password" maxlength="30" required name="password" />
                     	</li>
                     	<li class="buttons">
-                        	<input type="submit" name="login" value="Log me in" />
-                            <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+                        	<center><input type="submit" name="login" value="Log me in" /></center>
+                            
                     	</li>
                     
                 	</ul>
@@ -52,7 +57,7 @@
 	
 	if( $usr->userLogin() ) {
 		//echo "Welcome";	
-		header("location:/stretched/admin/index.html");	
+		header("location:index.html");	
 	} else {
 		echo "Incorrect Username/Password";	
 	}

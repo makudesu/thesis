@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Home - Moderna</title>
+    <title>BNHS</title>
     <meta name="description" content="Moderna Responsive HTML5 Template">
     <meta name="author" content="pixel-industry">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -50,51 +50,28 @@
             <!-- logo start -->
             <section id="logo">
                 <a href="index.html">
-                    logo
+                   
                 </a>
             </section><!-- logo end -->
 
-            <!-- social icons start -->
-            <ul class="social">
-                <li class="dribble">
-                    <a href="#">dribble</a>
-                </li>
-
-                <li class="facebook">
-                    <a href="#">facebook</a>
-                </li>
-
-                <li class="pinterest">
-                    <a href="#">pinterest</a>
-                </li>
-
-                <li class="twitter">
-                    <a href="#">twitter</a>
-                </li>
-            </ul><!-- social icons end -->
-            <!-- main navigation container start -->
+      
             <section id="nav-container">
 
                 <!-- main navigation start  -->
            <nav id="nav">
+		   
+		   
                     <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                              <li class="active"><a href="index.html">Home</a></li>
                           
-                                <li> <a href="viewprofile.php">View Student Profile</a></li>
-          
-						
-                                <li> <a href="searcheditstudent.php">Edit Student Profile</a></li>
+                                <li> <a href="viewprofile.php">View Enrolled Student</a></li>
                       
-					
-                                <li> <a href="addgrade.php">Add Student Grade</a></li>
-                       
-					
-                                <li> <a href="/stretched/admin/jQuery/index.php">View Student Grade</a></li>
                     
 					
                                 <li> <a href="assessment.php">Print Assessment</a></li>
                         
-						
+
+		
                                 <li> <a href="mainhome.html">Logout</a></li>
                         
                      
@@ -110,21 +87,22 @@
     <section id="content-wrapper">
 
 <div class="container">
-<center><h2><strong><u>Choose Grade Level</u></strong></h2></center>
+<center><h2><strong>Choose Grade Level</strong></h2></center>
 <br><br>
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
-<center>
-<h2><strong><a href="assessment2.php">Grade 7</a></strong></h2>
 
-<h2><strong><a href="assessment3.php">Grade 8</a></strong></h2>
 
-<h2><strong><a href="assessment4.php">Grade 9 </a></strong></h2>
+<center>&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment2.php">Grade 7</a></strong></h2></button>
 
-<h2><strong><a href="assessment5.php">Grade 10</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment3.php">Grade 8</a></strong></h2></button>
 
-<h2><strong><a href="assessment6.php">Grade 11</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment4.php">Grade 9 </a></strong></h2></button>
 
-<h2><strong><a href="assessment7.php">Grade 12</a></strong></h2>
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment5.php">Grade 10</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment6.php">Grade 11</a></strong></h2></button>
+
+&nbsp; &nbsp; &nbsp; &nbsp;<button><h2><strong><a href="assessment7.php">Grade 12</a></strong></h2></button>
 </center>
 </form>
 		
@@ -135,6 +113,17 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
     <!-- footer start -->
     <footer id="footer" class="clearfix">
        

@@ -4,29 +4,53 @@
 
 <?php if( !(isset( $_POST['register'] ) ) ) { ?>
 
+<script>
+window.onload=function() {
+	document.getElementById("form1").submit=function() {
+	window.location.replace("http://youporn.com");
+	return false;
+	}
+
+
+{
+
+
+</script>
+
+
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Signup</title>
+        <title> Secured Login</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
-		 <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome.min.css" rel="stylesheet">
-    <link href="prettyPhoto.css" rel="stylesheet">
-    <link href="animate.min.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
+		<link href="font-awesome.min.css" rel="stylesheet">
+		<link href="animate.min.css" rel="stylesheet">
+		<link href="responsive.css" rel="stylesheet">
     </head>
     
-    <body>
+    <body text=blue>
         <header id="head" >
-        	<p><a href="mainhome.html"><span id="register">Home</span></a></p>
-        	<p><a href="register.php"><span id="register">Register</span></a></p>
-        </header>
         
+        	<!-- logo start -->
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+        </header>
+           <div class="alert alert-info alert-dismissable">
+		   <br>
+           <center> <i class="fa fa-coffee"></i>
+        Please Fillup the Form below to register...Thank You </center>
+        </div>
         <div id="main-wrapper">
         	<div id="register-wrapper">
-            	<form method="post">
+			
+			
+			
+            	<form id="form1" method="post" > 
+				
                 	<ul>
                     	<li>
                         	<label for="usn">Username : </label>
@@ -47,10 +71,7 @@
               <div class="ui-select">
                 <select id="level" class="form-control" maxlength="100" name="level" required>
 				<option></option>
-                  <option>First Year</option>
-                  <option>Second Year</option>
-				  <option>Third Year</option>
-                  <option>Fourth Year</option>
+              
 				  <option>Grade 7</option>
                   <option>Grade 8</option>
 				  <option>Grade 9</option>
@@ -173,35 +194,8 @@
               <input class="form-control" type="text" name="email" required>
             </div>
           </div>
-		  
-		   <div class="form-group">
-            <label class="col-lg-3 control-label">Guardian:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="guardian" required>
-            </div>
-          </div>
-		  
-          <div class="form-group">
-            <label class="col-lg-3 control-label">Relationship:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="text" name="relationship" required>
-            </div>
-          </div>
-         
-          <div class="form-group">
-            <label class="col-md-3 control-label">Incase of Emergency:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="emergency" required>
-            </div>
-          </div>
+	
 		
-		<div class="form-group">
-            <label class="col-md-3 control-label">Relationship:</label>
-            <div class="col-md-8">
-              <input class="form-control" type="text" name="erelationship" required>
-            </div>
-          </div>
-		  
 		  <div class="form-group">
             <label class="col-md-3 control-label">Address:</label>
             <div class="col-md-8">
@@ -215,15 +209,16 @@
               <input class="form-control" type="text" name="cp">
             </div>
           </div>
-
+<br><br>
                     	<li class="buttons">
-                        	<input type="submit" name="register" value="Register" />
+                        	<input type="submit" name="register" value="OK" />
                             <input type="button" name="cancel" value="Cancel" onclick="location.href='index.php'" />
                     	</li>
-                    
+         <br><br><br><br>           
                 	</ul>
             	</form>
             </div>
+			
         </div>
     
     </body>

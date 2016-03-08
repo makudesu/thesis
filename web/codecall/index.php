@@ -16,8 +16,8 @@
     <body>
     
         <header id="head" >
-        	<h1><a href="localhost/stretched/admin/index.html">BACK</a></h1>
-        	<p><a href="register.php"><span id="register">Register</span></a></p>
+        	<h1><a href="/thesis/web/index.html"></a></h1>
+        	
         </header>
         
         <div id="main-wrapper">
@@ -34,8 +34,9 @@
                         	<input type="password" maxlength="30" required name="password" />
                     	</li>
                     	<li class="buttons">
-                        	<input type="submit" name="login" value="Log me in" />
-                            <input type="button" name="register" value="Register" onclick="location.href='register.php'" />
+                        	<center><input type="submit" name="login" value="Log me in" /></center>
+						    
+                            
                     	</li>
                     
                 	</ul>
@@ -55,7 +56,7 @@
 	if( $usr->userLogin() ) {
 	$_SESSION['uname'] = $_POST['username'];
 		//echo "Welcome";	
-		header("location:/stretched/index.html");	
+		header("location:../index.html");	
 	} else {
 		echo "Incorrect Username/Password";	
 	}

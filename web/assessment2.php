@@ -80,19 +80,18 @@
 <div class="container">
 <center><h2><strong><u>FIll up the Assessment</u></strong></h2></center>
 <br><br>
+
+
 <form name="myform" action="oldstudents.php" method="get" onsubmit="return validateForm()">
-
-&nbsp;&nbsp;&nbsp;&nbsp;Student  ID: &nbsp;<input type="text" name="studentid" class="ed" id="brnu" />
-Name:&nbsp;<input type="text" name="name" class="ed" id="brnu" />
-Year Level:&nbsp;<input type="text" name="level" class="ed" id="brnu" />
-
 </form>
-		<center><h2><strong><u>SUBJECTS</u></strong></h2></center>
+		<h1><strong>GRADE 7 ASSESSMENT FORM</strong></h1><BR>
+		<center><h2><strong>SUBJECTS</strong></h2></center>
       <div class="row">
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
-                      <th>Subject</th>
+                      <th style="text-align:left"><b>Subject</b></th>
+					  
                     </tr>
                   </thead>
                   <tbody>
@@ -106,6 +105,7 @@ Year Level:&nbsp;<input type="text" name="level" class="ed" id="brnu" />
 				   
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
+							echo '<td>'. $row['Teacher'] . '</td>';
 							echo '<td>'. $row['Subject'] . '</td>';
                             echo '</tr>';
                    }
@@ -119,39 +119,39 @@ Year Level:&nbsp;<input type="text" name="level" class="ed" id="brnu" />
 			
 	<table style="width:80%">
 	 <tr>
-    <th>Description</th>
+    <th style="text-align:left"><b>Description</b></th>
     <th></th> 
-    <th>Amount</th>
+    <th style="text-align:right"><b>Amount</b></th>
   </tr>
 	<tr>
     <td>Admission</td>
     <td></td> 
-    <td>300</td>
+    <td style="text-align:right">300.00</td>
   </tr>
   <tr>
     <td>Exam and Stationary</td>
     <td></td> 
-    <td>100</td>
+    <td style="text-align:right">100.00</td>
   </tr>
   <tr>
     <td>Games and Sports</td>
     <td></td> 
-    <td>100</td>
+    <td style="text-align:right">100.00</td>
   </tr>
   <tr>
     <td>Library</td>
     <td></td> 
-    <td>50</td>
+    <td style="text-align:right">50.00</td>
   </tr>
   <tr>
     <td>Journals</td>
     <td></td> 
-    <td>100</td>
+    <td style="text-align:right">100.00</td>
   </tr>
   <tr>
     <td>Computer Fees</td>
     <td></td> 
-    <td>1000</td>
+    <td style="text-align:right">1,000.00</td>
   </tr>
 <tr>
     <td> </td>
@@ -166,25 +166,29 @@ Year Level:&nbsp;<input type="text" name="level" class="ed" id="brnu" />
  <tr>
     <td><h2>Total Tuition Fee</h2></td>
     <td></td> 
-    <td><h2>1650</h2></td>
+    <td style="text-align:right"><h2>1,650.00</h2></td>
   </tr>
  
 </table>
 
 
         </div>
-		<br>
-		<br>
-		<br>
-		<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enrollment Officer Signature
-		<br><br>
-		<center>Student Signature</center>
-		<br>
-		<br>
-		<FORM>
-<center><INPUT TYPE="button" name="print" value="PRINT" onClick="window.print()"></center>
-</FORM>
+		<center>
+		<br><br><br><br>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+		<u>
+			Mark Kevin H. Agustin<br>
+		</u>
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
+		&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+			Regitrard
 
     </section><!-- content-wrapper end -->
 <br>

@@ -53,7 +53,7 @@
     <body>
 	
     	<div class="wrapper">
-<h2><strong><a href="/stretched/admin/index.html">BACK</a></strong></h2>
+<h2><strong><a href="/thesis/web/admin/index.html">BACK</a></strong></h2>
     		<div class="page-header ">
     			<h1 class="orangeFont noMargin">Student Grades </h1>
     			<div class="panel panel-default">
