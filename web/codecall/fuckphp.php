@@ -2,13 +2,13 @@
 
 function dbConnect (){
  	$conn =	null;
- 	$host = 'db4free.net';
+ 	$host = 'localhost';
  	$db = 	'codecalltut';
- 	$user = 'bnhs';
- 	$pwd = 	'123456';
+ 	$user = 'root';
+ 	$pwd = 	'';
 	try {
 	   	$conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
-		echo 'Connected succesfully.<br>';
+		echo ' ';
 		
 	}
 	catch (PDOException $e) {
