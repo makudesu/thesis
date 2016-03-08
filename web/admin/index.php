@@ -19,7 +19,7 @@
     <body>
     
         <header id="head" >
-      <h2><strong><a href="localhost/thesis/web/admin/mainhome.html"></a></strong></h2>
+      <h2><strong><a href="mainhome.html"></a></strong></h2>
         	<p><a href="register.php"><span id="register">Register</span></a></p>
         </header>
         
@@ -57,7 +57,7 @@
 	
 	if( $usr->userLogin() ) {
 		//echo "Welcome";	
-		header("location:/thesis/web/admin/index.html");	
+		header("location:index.html");	
 	} else {
 		echo "Incorrect Username/Password";	
 	}
