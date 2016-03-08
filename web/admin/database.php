@@ -2,9 +2,9 @@
 class Database
 {
     private static $dbName = 'codecalltut' ;
-    private static $dbHost = 'localhost' ;
-    private static $dbUsername = 'root';
-    private static $dbUserPassword = '';
+    private static $dbHost = 'db4free' ;
+    private static $dbUsername = 'bnhs';
+    private static $dbUserPassword = '123456';
      
     private static $cont  = null;
      
