@@ -123,11 +123,16 @@ Grade: <font color="black"><?php echo $level?></font>
 		<br><br><center><h2><strong>SUBJECTS</strong></h2></center>
       <div class="row">
                 <table class="table table-striped table-bordered">
-                  <thead>
-                    <tr>
-                      <th style="text-align:left"><b>Subject</b></th>
+                  
+                  <tr>  <td style="text-align:left"><b>Student</b></td>
+					
+					<td style="text-align:left"><b>&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp; 
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					Teacher</b></td>
                     </tr>
-                  </thead>
+                  
                   <tbody>
                   <?php
                    include 'database.php';
@@ -140,7 +145,11 @@ Grade: <font color="black"><?php echo $level?></font>
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
 							echo '<td>'. $row['Subject'] . '</td>';
-                            echo '</tr>';
+							echo '<td style="text-align:left">&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;'. $row['Teacher'] . '</td>';
+							echo '</tr>';
                    }
 				   
                    Database::disconnect();
@@ -157,34 +166,39 @@ Grade: <font color="black"><?php echo $level?></font>
     <th style="text-align:right"><b>Amount</b></th>
   </tr>
 	<tr>
-    <td>Admission</td>
+    <td style="text-align:left">Admission</td>
     <td></td> 
-    <td style="text-align:right">300.00</td>
+    <td style="text-align:right">P300.00</td>
   </tr>
   <tr>
-    <td>Exam and Stationary</td>
+    <td style="text-align:left">Exam and Stationary</td>
     <td></td> 
-    <td style="text-align:right">100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
-    <td>Games and Sports</td>
+    <td style="text-align:left">Games and Sports</td>
     <td></td> 
-    <td style="text-align:right">100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
-    <td>Library</td>
+    <td style="text-align:left">Library</td>
     <td></td> 
-    <td style="text-align:right">50.00</td>
+    <td style="text-align:right">P50.00</td>
   </tr>
   <tr>
-    <td>Journals</td>
+    <td style="text-align:left">Journals</td>
     <td></td> 
-    <td style="text-align:right">100.00</td>
+    <td style="text-align:right">P100.00</td>
   </tr>
   <tr>
-    <td>Computer Fees</td>
+    <td style="text-align:left">Computer Fees</td>
     <td></td> 
-    <td style="text-align:right">1,000.00</td>
+    <td style="text-align:right">P1,000.00</td>
+    </tr>
+  <tr>
+    <td><h4><i>Total Tuition Fee</i></h4></td>
+    <td></td> 
+    <td style="text-align:right"><i><b>P1650.00</b></i></td>
   </tr>
  
 </table>

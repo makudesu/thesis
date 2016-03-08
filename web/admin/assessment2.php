@@ -48,13 +48,21 @@
         <!-- header start -->
         <header id="header" class="clearfix">
             <!-- logo start -->
-          
-            <!-- main navigation container start -->
+            <section id="logo">
+                <a href="index.html">
+                   
+                </a>
+            </section><!-- logo end -->
+
+      
             <section id="nav-container">
 
                 <!-- main navigation start  -->
-          <nav id="nav">
-                    <ul>   <li class="active"><a href="index.html">Home</a></li>
+           <nav id="nav">
+		   
+		   
+                    <ul> 
+					<li class="active"><a href="index.html">Home</a></li>
                           
                                 <li> <a href="viewprofile.php">View Student Profile</a></li>
                       
@@ -163,9 +171,11 @@
     <td> </td>
   </tr> 
  <tr>
-    <td><h2>Total Tuition Fee</h2></td>
+    </tr>
+ <tr>
+    <td><h4><i>Total Tuition Fee</i></h4></td>
     <td></td> 
-    <td style="text-align:right"><h2>1,650.00</h2></td>
+    <td style="text-align:right"><i><b>P1650.00</b></i></td>
   </tr>
  
 </table>

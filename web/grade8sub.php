@@ -116,16 +116,22 @@ Grade: <font color="black"><?php echo $level?></font>
     <!-- content wrapper start -->
     <section id="content-wrapper">
 
-<div class="container">
 
+<div class="container">
 		<br><br><center><h2><strong>SUBJECTS</strong></h2></center>
       <div class="row">
                 <table class="table table-striped table-bordered">
                   <thead>
                     <tr>
-                      <th>Subject</th>
+                      <tr>  <td style="text-align:left"><b>Student</b></td>
+					
+					<td style="text-align:left"><b>&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp; 
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+					Teacher</b></td>
                     </tr>
-                  </thead>
+                  
                   <tbody>
                   <?php
                    include 'database.php';
@@ -138,7 +144,11 @@ Grade: <font color="black"><?php echo $level?></font>
                    foreach ($pdo->query($sql) as $row) {
                             echo '<tr>';
 							echo '<td>'. $row['Subject'] . '</td>';
-                            echo '</tr>';
+							echo '<td style="text-align:left">&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;
+							&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;'. $row['Teacher'] . '</td>';
+							echo '</tr>';
                    }
 				   
                    Database::disconnect();
@@ -146,18 +156,14 @@ Grade: <font color="black"><?php echo $level?></font>
                   </tbody>
             </table>
 			
-		<br><center><h2><strong>Assessment of Fees</strong></h2></center><br>
+			<center><h2><strong>Assessment of Fees</strong></h2></center>
 			
 	<table style="width:80%">
-	 <th><tr><b>Description</b></th></tr>
-     &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
-	 &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp
-    <th><tr><b><u>Amount</u></b></th></tr>
-	
+	 <tr>
+    <th style="text-align:left"><b>Description</b></th>
+    <th></th> 
+    <th style="text-align:right"><b>Amount</b></th>
+  </tr>
 	<tr>
     <td>Admission</td>
     <td></td> 
@@ -186,22 +192,12 @@ Grade: <font color="black"><?php echo $level?></font>
   <tr>
     <td>Computer Fees</td>
     <td></td> 
-    <td style="text-align:right">P1000.00</td>
-  </tr>
-<tr>
-    <td> </td>
-    <td> </td> 
-    <td> </td>
-  </tr> 
-  <tr>
-    <td> </td>
-    <td> </td> 
-    <td> </td>
-  </tr> 
+    <td style="text-align:right">P1,000.00</td>
+    </tr>
  <tr>
-    <td><h4><br><i>Total Tuition Fee</i></h4></td>
+    <td><h4><i>Total Tuition Fee</i></h4></td>
     <td></td> 
-    <td style="text-align:right"><h4><br><i>P1650.00</i></h4></td>
+    <td style="text-align:right"><i><b>P1650.00</b></i></td>
   </tr>
  
 </table>
