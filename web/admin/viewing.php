@@ -7,7 +7,7 @@
 	if (isset($_GET['search'])) {
 		// Create the query
 		$data = "%".$_GET['search']."%";
-		$sql = 'SELECT * FROM tblprereg WHERE Firstname like ?';
+		$sql = 'SELECT * FROM tblprereg WHERE Student_ID like ?';
 		// we have to tell the PDO that we are going to send values to the query
 		$stmt = $conn->prepare($sql);
 		// Now we execute the query passing an array toe execute();
@@ -73,8 +73,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-	  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />  
+	  <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg" />
+    <link rel="icon" type="image/x-jpg" href="favicon.jpg" />  
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/960_12_col.css" media="screen" />
@@ -105,7 +105,7 @@
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
                           
-                                <li> <a href="viewprofile.php">View Student Profile</a></li>
+                                <li> <a href="viewprofile.php">View Enrolled Student</a></li>
                       
                     
 					
@@ -133,7 +133,7 @@
     <center> <br><br><h5>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" value= "First Name" name="search" class="ed" id="brnu" />
+	  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="search" class="ed" id="brnu" placeholder="Student ID" />
 <input type="submit" value="Submit" /> </center><br></h5>
 <form action="update.php" method="post" onsubmit="return validateForm()">
 
