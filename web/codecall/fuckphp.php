@@ -2,10 +2,10 @@
 
 function dbConnect (){
  	$conn =	null;
- 	$host = 'db4free.net';
- 	$db = 	'codecalltut';
- 	$user = 'bnhs';
- 	$pwd = 	'123456';
+ 	$host = 'sql6.freesqldatabase.com';
+ 	$db = 	'sql6111644';
+ 	$user = 'sql6111644';
+ 	$pwd = 	'iGMQd39TBT';
 	try {
 	   	$conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
 		echo 'Connected succesfully.<br>';

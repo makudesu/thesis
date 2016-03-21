@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private static $dbName = 'codecalltut' ;
-    private static $dbHost = 'db4free.net' ;
-    private static $dbUsername = 'bnhs';
-    private static $dbUserPassword = '123456';
+    private static $dbName = 'sql6.freesqldatabase.com' ;
+    private static $dbHost = 'sql6111644' ;
+    private static $dbUsername = 'sql6111644';
+    private static $dbUserPassword = 'iGMQd39TBT';
      
     private static $cont  = null;
      

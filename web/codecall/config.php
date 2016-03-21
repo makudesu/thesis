@@ -4,9 +4,9 @@
 	
 
 	//define some contstant
-    define( "DB_DSN", "mysql:host=db4free.net;dbname=codecalltut" );
-    define( "DB_USERNAME", "bnhs" );
-    define( "DB_PASSWORD", "123456" );
+    define( "DB_DSN", "mysql:host=sql6.freesqldatabase.com;dbname=sql6111644" );
+    define( "DB_USERNAME", "sql6111644" );
+    define( "DB_PASSWORD", "iGMQd39TBT" );
 	define( "CLS_PATH", "class" );
 	
 	//include the classes
