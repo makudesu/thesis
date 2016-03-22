@@ -56,7 +56,7 @@ require_once 'viewing_fucntion.php';
                        
                                 <li> <a href="oldstudents.php">Enroll & Edit Profile</a></li>
                     
-                                <li> <a href="mainhome.html">Logout</a></li>
+                                <li> <a href="index.html">Logout</a></li>
 						</ul>
 						</nav>
             </section><!-- main navigation container end -->

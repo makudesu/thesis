@@ -61,7 +61,7 @@
                       
                                 <li> <a href="searcheditstudent.php">Edit Profile</a></li>
        
-                                <li> <a href="mainhome.html">Logout</a></li>
+                                <li> <a href="index.html">Logout</a></li>
             </ul>
 			</nav>
 
