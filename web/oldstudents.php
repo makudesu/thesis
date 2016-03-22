@@ -91,17 +91,7 @@ require_once 'viewing_fucntion.php';
             <div class="col-lg-8">
               <input class="form-control" type="text"maxlength="30" required autofocus  name="username" value="<?php echo $username ?>" required>
             </div>
-		 <div class="form-group">
-            <label class="col-lg-3 control-label">Password:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="password" value="<?php echo $password ?>" required>
-            </div>
-				 <div class="form-group">
-            <label class="col-lg-3 control-label">Confirm Password:</label>
-            <div class="col-lg-8">
-              <input class="form-control" type="password"maxlength="30"  name="conpassword" value="<?php echo $password ?>" required>
-            </div>
-		
+
 		   <div class="form-group">
             <label class="col-lg-3 control-label">School Year:</label>
             <div class="col-lg-8">
