@@ -16,7 +16,7 @@
     <body>
     
         <header id="head" >
-        	<h1><a href="/thesis/web/index.html"></a></h1>
+        	<h1><a href="/thesis/web/mainhome.html"></a></h1>
         	
         </header>
         
