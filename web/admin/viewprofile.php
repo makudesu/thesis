@@ -92,7 +92,7 @@
     <section id="content-wrapper">
 
 
-<iframe width="100%" height="100%" scrolling="no" name="iframe1" src="https://bnhs-admin.herokuapp.com"></iframe>
+<iframe width="100%" height="100%" scrolling="no" name="iframe1" src="https://bnhs-admin.herokuapp.com/students/"></iframe>
     </section><!-- content-wrapper end -->
 
     <!-- footer start -->
